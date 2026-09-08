@@ -1,0 +1,232 @@
+/* ==========================================================================
+   GENIUS IAS — animations.css
+   Keyframes, scroll-reveal system, hero intro sequence, reduced motion
+   ========================================================================== */
+
+/* ---------- Keyframes ---------- */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes floatY {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -14px; }
+}
+
+@keyframes blobDrift {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(-40px, 30px) scale(1.12); }
+  100% { transform: translate(30px, -24px) scale(.95); }
+}
+
+@keyframes dotPulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 201, 40, .65); }
+  70% { box-shadow: 0 0 0 9px rgba(255, 201, 40, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 201, 40, 0); }
+}
+
+@keyframes scrollLine {
+  0% { top: -46px; }
+  60%, 100% { top: 46px; }
+}
+
+@keyframes preloaderPulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 14px 44px -8px rgba(255, 201, 40, .5); }
+  50% { transform: scale(1.07); box-shadow: 0 20px 60px -6px rgba(255, 201, 40, .75); }
+}
+
+@keyframes preloaderSlide {
+  0% { transform: translateX(-110%); }
+  100% { transform: translateX(280%); }
+}
+
+@keyframes panelIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pageIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes successPop {
+  0% { transform: scale(.4); opacity: 0; }
+  60% { transform: scale(1.12); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes heroLineUp {
+  from { transform: translateY(115%) rotate(2.5deg); opacity: 0; }
+  to { transform: translateY(0) rotate(0); opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(26px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(34px) scale(.94); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Animated gradient text accent (used sparingly) */
+.animated-grad {
+  background: linear-gradient(100deg, var(--accent) 20%, #FFE58A 40%, var(--accent) 60%);
+  background-size: 220% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientShift 5s linear infinite;
+}
+
+/* ---------- Scroll reveal system (IntersectionObserver driven) ---------- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(34px);
+  transition: opacity .8s var(--ease-out), transform .8s var(--ease-out);
+  transition-delay: var(--reveal-delay, 0s);
+  will-change: opacity, transform;
+}
+[data-reveal="left"] { transform: translateX(-42px); }
+[data-reveal="right"] { transform: translateX(42px); }
+[data-reveal="scale"] { transform: scale(.9); }
+[data-reveal="fade"] { transform: none; }
+[data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+/* Staggered children: parent gets .stagger, children get incremental delays */
+.stagger.is-revealed > * {
+  animation: fadeUp .7s var(--ease-out) both;
+}
+.stagger > * { opacity: 0; }
+.stagger.is-revealed > *:nth-child(1) { animation-delay: .05s; }
+.stagger.is-revealed > *:nth-child(2) { animation-delay: .13s; }
+.stagger.is-revealed > *:nth-child(3) { animation-delay: .21s; }
+.stagger.is-revealed > *:nth-child(4) { animation-delay: .29s; }
+.stagger.is-revealed > *:nth-child(5) { animation-delay: .37s; }
+.stagger.is-revealed > *:nth-child(6) { animation-delay: .45s; }
+.stagger.is-revealed > *:nth-child(7) { animation-delay: .53s; }
+.stagger.is-revealed > *:nth-child(8) { animation-delay: .61s; }
+
+/* ---------- Hero intro sequence ----------
+   0.0s background · 0.2s logo · 0.4s label · 0.6s heading
+   0.8s desc · 1.0s buttons · 1.2s visual · 1.4s float cards · 1.6s particles */
+.hero__label,
+.hero__title .line > span,
+.hero__desc,
+.hero__actions,
+.hero__trust,
+.hero__media,
+.hero__scroll,
+.hero__floats .float-card {
+  opacity: 0;
+}
+
+.hero.is-ready .hero__label {
+  animation: fadeUp .7s var(--ease-out) .4s both;
+}
+.hero.is-ready .hero__title .line > span {
+  display: inline-block;
+  animation: heroLineUp .9s var(--ease-out) both;
+}
+.hero.is-ready .hero__title .line:nth-child(1) > span { animation-delay: .6s; }
+.hero.is-ready .hero__title .line:nth-child(2) > span { animation-delay: .72s; }
+.hero.is-ready .hero__title .line:nth-child(3) > span { animation-delay: .84s; }
+.hero.is-ready .hero__desc { animation: fadeUp .7s var(--ease-out) .95s both; }
+.hero.is-ready .hero__actions { animation: fadeUp .7s var(--ease-out) 1.05s both; }
+.hero.is-ready .hero__trust { animation: fadeUp .7s var(--ease-out) 1.15s both; }
+.hero.is-ready .hero__media { animation: cardIn .9s var(--ease-out) 1.2s both; }
+.hero.is-ready .hero__scroll { animation: fadeIn .8s ease 1.7s both; }
+.hero.is-ready .float-card { animation: cardIn .8s var(--ease-out) both, floatY 7s ease-in-out 2.4s infinite; }
+.hero.is-ready .float-card--1 { animation-delay: 1.4s, 2.6s; }
+.hero.is-ready .float-card--2 { animation-delay: 1.52s, 2.7s; }
+.hero.is-ready .float-card--3 { animation-delay: 1.64s, 2.8s; }
+.hero.is-ready .float-card--4 { animation-delay: 1.76s, 2.9s; }
+
+/* Inner page hero intro */
+.page-hero .breadcrumb,
+.page-hero .label,
+.page-hero .page-hero__title,
+.page-hero .page-hero__desc,
+.page-hero .page-hero__chips,
+.page-hero .page-hero__actions {
+  animation: fadeUp .75s var(--ease-out) both;
+}
+.page-hero .breadcrumb { animation-delay: .1s; }
+.page-hero .label { animation-delay: .2s; }
+.page-hero .page-hero__title { animation-delay: .3s; }
+.page-hero .page-hero__desc { animation-delay: .42s; }
+.page-hero .page-hero__chips { animation-delay: .54s; }
+.page-hero .page-hero__actions { animation-delay: .54s; }
+
+/* Navbar / topbar entrance */
+.navbar { animation: fadeUp .8s var(--ease-out) .2s both; }
+.topbar { animation: fadeIn .6s ease both; }
+
+/* Mobile menu stagger */
+.mobile-menu__link:nth-child(1) { transition-delay: .06s; }
+.mobile-menu__link:nth-child(2) { transition-delay: .12s; }
+.mobile-menu__link:nth-child(3) { transition-delay: .18s; }
+.mobile-menu__link:nth-child(4) { transition-delay: .24s; }
+.mobile-menu__link:nth-child(5) { transition-delay: .3s; }
+.mobile-menu__link:nth-child(6) { transition-delay: .36s; }
+.mobile-menu__link:nth-child(7) { transition-delay: .42s; }
+.mobile-menu__link:nth-child(8) { transition-delay: .48s; }
+.mobile-menu__link:nth-child(9) { transition-delay: .54s; }
+.mobile-menu__link:nth-child(10) { transition-delay: .6s; }
+
+/* Course card filter transitions */
+.course-card {
+  animation: cardIn .5s var(--ease-out) both;
+}
+
+/* Footer reveal */
+.footer__grid > * { opacity: 0; transform: translateY(28px); transition: opacity .8s var(--ease-out), transform .8s var(--ease-out); }
+.footer.is-inview .footer__grid > * { opacity: 1; transform: none; }
+.footer.is-inview .footer__grid > *:nth-child(1) { transition-delay: .05s; }
+.footer.is-inview .footer__grid > *:nth-child(2) { transition-delay: .15s; }
+.footer.is-inview .footer__grid > *:nth-child(3) { transition-delay: .25s; }
+.footer.is-inview .footer__grid > *:nth-child(4) { transition-delay: .35s; }
+.footer.is-inview .footer__grid > *:nth-child(5) { transition-delay: .45s; }
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .18s !important;
+  }
+
+  [data-reveal], .stagger > * { opacity: 1; transform: none; }
+  .hero__label,
+  .hero__title .line > span,
+  .hero__desc,
+  .hero__actions,
+  .hero__trust,
+  .hero__media,
+  .hero__scroll,
+  .hero__floats .float-card,
+  .footer__grid > * { opacity: 1; transform: none; animation: none; }
+
+  .hero__blob, .float-card, .split__float-badge, .split__exp-chip,
+  .contact-map__pin, .hero__scroll-line::after { animation: none; }
+  .cursor-glow { display: none; }
+  .journey__line-fill { transition-duration: .01ms !important; }
+  .roadmap__line-fill { transition-duration: .01ms !important; }
+}

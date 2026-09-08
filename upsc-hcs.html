@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UPSC | HCS Coaching in Rohtak — Genius IAS</title>
+  <meta name="description" content="UPSC CSE Foundation and HCS Foundation programs at Genius IAS Rohtak in 1-year, 2-year and 3-year tracks — GS, Optional, CSAT, test series, answer writing and mock interviews with personal mentorship. Online & offline.">
+  <meta property="og:title" content="UPSC | HCS Coaching — Genius IAS Rohtak">
+  <meta property="og:description" content="One page for both civil services tracks — switch between UPSC and HCS programs, mentors, FAQs and enquire.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#071A63">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23071A63'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' font-weight='700' fill='%23FFC928' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <style>
+    /* Exam toggle — square buttons, 0 border radius */
+    .exam-toggle { display: inline-flex; gap: 0; margin-top: 28px; border: 1px solid rgba(255, 201, 40, .5); border-radius: 0; overflow: hidden; }
+    .exam-toggle__btn {
+      border: 0; border-radius: 0;
+      padding: 13px 42px;
+      font-size: .82rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+      color: var(--text-light); background: transparent; cursor: pointer;
+      transition: background .25s, color .25s;
+    }
+    .exam-toggle__btn + .exam-toggle__btn { border-left: 1px solid rgba(255, 201, 40, .5); }
+    .exam-toggle__btn:hover { color: var(--white); background: rgba(255, 201, 40, .12); }
+    .exam-toggle__btn.is-active { color: var(--primary-dark); background: var(--accent); }
+    [data-tab-panel][hidden] { display: none !important; }
+  </style>
+</head>
+<body data-page="upsc-hcs">
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="preloader" id="preloader" role="status" aria-label="Loading">
+    <div class="preloader__logo">
+      <img class="preloader__img" src="images/logo.jpeg" alt="Genius IAS logo" width="300" height="78">
+      <div class="preloader__name">Genius IAS</div>
+      <div class="preloader__sub">School of Humanities</div>
+    </div>
+    <div class="preloader__bar" aria-hidden="true"></div>
+  </div>
+
+  <div id="navbar-root"></div>
+
+  <main id="main">
+
+    <!-- ===== Hero with UPSC / HCS toggle ===== -->
+    <section class="page-hero" aria-label="Page introduction">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__blob hero__blob--1"></div>
+        <div class="hero__blob hero__blob--3"></div>
+      </div>
+      <div class="container">
+        <div class="page-hero__inner">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            <span class="current" aria-current="page">UPSC | HCS</span>
+          </nav>
+          <span class="label">Civil Services — UPSC &amp; HCS</span>
+          <h1 class="page-hero__title">One Destination for <em>UPSC &amp; HCS.</em></h1>
+          <p class="page-hero__desc">UPSC CSE Foundation and HCS Foundation programs in 1-year, 2-year and 3-year tracks — prelims, mains and interview with GS, Optional, CSAT, test series, mock interviews and personal mentorship. Online and offline. Pick your track below.</p>
+          <div class="exam-toggle" role="tablist" aria-label="Choose exam track">
+            <button type="button" class="exam-toggle__btn is-active" id="tabUpscBtn" role="tab" aria-selected="true" aria-controls="section-upsc">UPSC</button>
+            <button type="button" class="exam-toggle__btn" id="tabHcsBtn" role="tab" aria-selected="false" aria-controls="section-hcs">HCS</button>
+          </div>
+          <div class="page-hero__actions" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:26px;">
+            <a class="btn btn--gold btn--lg btn-magnetic" href="contact.html#counselling-form"><span class="btn__label">Enquire Now</span></a>
+            <a class="btn btn--glass btn--lg" href="#section-upsc"><span class="btn__label">View Programs</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= UPSC PANEL ================= -->
+    <div id="section-upsc" data-tab-panel="upsc" role="tabpanel" aria-labelledby="tabUpscBtn">
+
+      <!-- ===== Why UPSC with Genius IAS ===== -->
+      <section class="section" aria-labelledby="whyUpscTitle">
+        <div class="container">
+          <div class="split">
+            <div class="split__content" data-reveal="left">
+              <span class="label">Why UPSC with Genius IAS</span>
+              <h2 class="section-title" id="whyUpscTitle">Serious Exams Demand <em>a Serious System.</em></h2>
+              <p class="section-sub" style="margin-bottom:22px;">Genius IAS blends rigorous academics with personal mentorship for aspirants aiming at the Civil Services Examination — from a beginner&rsquo;s first foundation class to the final interview panel.</p>
+              <ul class="check-list split__points">
+                <li>Expert mentorship with personalized guidance &amp; structured study plans</li>
+                <li>Current affairs integration &amp; daily answer writing</li>
+                <li>Test-based preparation with All-India ranking &amp; analytics</li>
+                <li>Interview guidance with mock panels &amp; DAF sessions</li>
+              </ul>
+            </div>
+            <div class="split__visual" data-reveal="right">
+              <div class="split__media">
+                <img src="images/hero/about-visual.jpg" alt="UPSC aspirants preparing in the Genius IAS study hall" loading="lazy" width="800" height="920">
+              </div>
+              <div class="split__float-badge">
+                <div><strong>AIR 3</strong><span>UPSC CSE 2024 · among displayed results</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== UPSC Programs ===== -->
+      <section class="section section--light" aria-labelledby="programsTitle">
+        <div class="container">
+          <div class="section-head section-head--center" data-reveal>
+            <span class="label">The UPSC Program</span>
+            <h2 class="section-title" id="programsTitle">One Foundation. <em>Three Timelines.</em></h2>
+            <p class="section-sub">A single complete foundation track offered in 1-year, 2-year and 3-year options — paced to your timeline, identical in rigour.</p>
+          </div>
+
+          <!-- UPSC CSE Foundation -->
+          <div class="program-detail" id="foundation" data-reveal>
+            <div class="program-detail__card">
+              <div class="program-detail__visual">
+                <div class="card-art art--upsc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.5 2.7 2.8 6 2.8s6-1.3 6-2.8v-4.5"/><line x1="22" y1="10" x2="22" y2="16"/></svg></div>
+                <span class="program-detail__visual-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1 Year | 2 Year | 3 Year</span>
+              </div>
+              <div class="program-detail__body">
+                <span class="program-detail__num">FLAGSHIP PROGRAM</span>
+                <h3 class="program-detail__title">UPSC CSE Foundation Program</h3>
+                <p class="program-detail__desc">Designed for aspirants at the beginning of their preparation journey — particularly fresh graduates or final-year students. Builds a strong foundation across the entire UPSC syllabus with conceptual clarity and the critical skills needed for Prelims, Mains and Interview.</p>
+                <div class="program-detail__meta"><span class="chip">1 Year</span><span class="chip">2 Year</span><span class="chip">3 Year</span><span class="chip chip--gold">Prelims + Mains + Interview</span></div>
+                <div class="program-detail__actions">
+                  <a class="btn btn--gold" href="contact.html?course=UPSC#counselling-form"><span class="btn__label">Enquire Now</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                  <button type="button" class="btn btn--ghost-dark" data-view-course="upsc-foundation"><span class="btn__label">View Details</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="program-subhead" data-reveal>Ideal Features of the Program</h3>
+          <div class="grid grid-2" data-reveal="fade">
+            <div class="feature-group">
+              <h4>Comprehensive Syllabus Coverage</h4>
+              <ul class="check-list">
+                <li>All General Studies (Prelims &amp; Mains) and CSAT topics from scratch</li>
+                <li>Foundational knowledge in Polity, History, Geography, Economy, Environment, Science &amp; Technology, Ethics and Current Affairs</li>
+                <li>Coaching for Optional Subjects</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>NCERT and Standard Books Focus</h4>
+              <ul class="check-list">
+                <li>Sessions covering NCERT textbooks as the foundation</li>
+                <li>Gradual transition to advanced reference materials</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Gradual Learning Approach</h4>
+              <ul class="check-list">
+                <li>Step-by-step progression from basics to advanced topics</li>
+                <li>Emphasis on strong command over concepts</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Daily Current Affairs &amp; Editorial Analysis</h4>
+              <ul class="check-list">
+                <li>Regular sessions on current affairs and editorials</li>
+                <li>Special sessions on writing high-quality answers and essays</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Answer Writing and Essay Writing Practice</h4>
+              <ul class="check-list">
+                <li>Introduction to answer writing techniques for Mains</li>
+                <li>Regular essay writing practice with feedback</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>CSAT Preparation</h4>
+              <ul class="check-list">
+                <li>Classes on logical reasoning, analytical ability, data interpretation and reading comprehension</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Test Series and Performance Analysis</h4>
+              <ul class="check-list">
+                <li>Regular Prelims and Mains test series</li>
+                <li>Detailed performance analysis to track progress</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 class="program-subhead" data-reveal>Who Can Enroll?</h3>
+          <div class="eligibility-grid stagger" data-reveal="fade">
+            <div class="eligibility-item"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.5 2.7 2.8 6 2.8s6-1.3 6-2.8v-4.5"/></svg></div><div><h3>Eligibility</h3><p>Graduates, or first / second-year students of any recognized university, aiming at UPSC CSE in the next 2–3 years.</p></div></div>
+            <div class="eligibility-item"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></div><div><h3>Beginners</h3><p>New to UPSC preparation and needing a step-by-step guide to the exam pattern, syllabus and strategy.</p></div></div>
+            <div class="eligibility-item"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><div><h3>Undergraduates</h3><p>First, second or third-year students who want to prepare alongside college education.</p></div></div>
+            <div class="eligibility-item"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><div><h3>No Background Needed</h3><p>No prior exposure to Polity, History, Economics or Ethics — knowledge is built from scratch.</p></div></div>
+            <div class="eligibility-item"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><div><h3>Long-Term Planners</h3><p>Ready to master concepts over 1.5–2 years and crack the exam in the first or second attempt.</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== UPSC methodology ===== -->
+      <section class="section section--grad" aria-labelledby="methodTitle">
+        <div class="container">
+          <div class="section-head section-head--center" data-reveal>
+            <span class="label">Learning Methodology</span>
+            <h2 class="section-title" id="methodTitle">How the UPSC Journey <em>Unfolds Here</em></h2>
+          </div>
+          <div class="method-grid stagger" data-reveal="fade">
+            <article class="method-card"><div class="method-card__step">STEP 01</div><h3>Understand</h3><p>Orientation sessions decode the syllabus, exam pattern and previous-year trends so your effort goes exactly where it matters.</p></article>
+            <article class="method-card"><div class="method-card__step">STEP 02</div><h3>Learn</h3><p>Concept building with expert faculty — GS and CSAT through daily classes, with complete syllabus coverage.</p></article>
+            <article class="method-card"><div class="method-card__step">STEP 03</div><h3>Practice</h3><p>Daily answer writing with evaluation, 1:1 feedback and model answers to sharpen expression continuously.</p></article>
+            <article class="method-card"><div class="method-card__step">STEP 04</div><h3>Test</h3><p>Prelims and mains test series — 40+ tests, All-India ranking, detailed solutions and performance analytics.</p></article>
+            <article class="method-card"><div class="method-card__step">STEP 05</div><h3>Improve</h3><p>Feedback loops and personal mentorship convert analytics into a targeted revision plan, week after week.</p></article>
+            <article class="method-card"><div class="method-card__step">STEP 06</div><h3>Achieve</h3><p>Interview guidance with mock panels, DAF deep-dives and personality development to finish strong.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== UPSC Mentorship ===== -->
+      <section class="section" aria-labelledby="mentorTitle">
+        <div class="container">
+          <div class="split split--reverse">
+            <div class="split__visual" data-reveal="right">
+              <div class="split__media">
+                <img src="images/gallery/mentorship.jpg" alt="One-on-one mentorship session between a mentor and an aspirant" loading="lazy" width="800" height="920">
+              </div>
+            </div>
+            <div class="split__content" data-reveal="left">
+              <span class="label">Mentorship</span>
+              <h2 class="section-title" id="mentorTitle">You Are Never <em>Preparing Alone.</em></h2>
+              <p class="section-sub" style="margin-bottom:20px;">Every aspirant gets a study plan tailored to their strengths, regular one-to-one reviews and counselling at each stage — prelims, mains and interview.</p>
+              <ul class="check-list split__points">
+                <li>Personalized study plans &amp; periodic reviews</li>
+                <li>DAF analysis and interview-stage guidance</li>
+                <li>Mentors with UPSC / HCS interview experience</li>
+                <li>Peer learning through group discussions</li>
+              </ul>
+              <a class="btn btn--blue btn-magnetic" href="faculty.html"><span class="btn__label">Meet the Mentors</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== UPSC FAQ ===== -->
+      <section class="section section--light" aria-labelledby="faqTitle">
+        <div class="container">
+          <div class="section-head section-head--center" data-reveal>
+            <span class="label">Common Questions</span>
+            <h2 class="section-title" id="faqTitle">UPSC <em>FAQs</em></h2>
+          </div>
+          <div style="max-width:820px;margin-inline:auto;" class="faq-list" data-reveal>
+            <div class="faq-item">
+              <h3><button type="button" class="faq-item__q" aria-expanded="false" aria-controls="upsc-faq-1" id="upsc-faq-q1"><span>Which program should a beginner start with?</span><span class="faq-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span></button></h3>
+              <div class="faq-item__a" id="upsc-faq-1" role="region" aria-labelledby="upsc-faq-q1"><div><p>The UPSC CSE Foundation Program is designed for beginners and college students — daily GS + CSAT classes, complete syllabus coverage, study material, test series and personal mentorship, offered in 1-year, 2-year and 3-year tracks. Our counsellors will help you pick the timeline that fits your background.</p></div></div>
+            </div>
+            <div class="faq-item">
+              <h3><button type="button" class="faq-item__q" aria-expanded="false" aria-controls="upsc-faq-2" id="upsc-faq-q2"><span>Are online classes available?</span><span class="faq-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span></button></h3>
+              <div class="faq-item__a" id="upsc-faq-2" role="region" aria-labelledby="upsc-faq-q2"><div><p>Yes. Genius IAS offers both online and offline coaching options to suit different learning preferences.</p></div></div>
+            </div>
+            <div class="faq-item">
+              <h3><button type="button" class="faq-item__q" aria-expanded="false" aria-controls="upsc-faq-3" id="upsc-faq-q3"><span>What does the Prelims Test Series include?</span><span class="faq-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span></button></h3>
+              <div class="faq-item__a" id="upsc-faq-3" role="region" aria-labelledby="upsc-faq-q3"><div><p>The 6-month series includes 40+ tests with All-India ranking, dedicated GS &amp; CSAT tests, detailed solutions and performance analytics.</p></div></div>
+            </div>
+          </div>
+          <div style="text-align:center;margin-top:34px;" data-reveal>
+            <a class="btn btn--outline" href="faq.html?cat=upsc"><span class="btn__label">View All FAQs</span></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= HCS PANEL ================= -->
+    <div id="section-hcs" data-tab-panel="hcs" role="tabpanel" aria-labelledby="tabHcsBtn" hidden>
+
+      <!-- ===== HCS Regular Program ===== -->
+      <section class="section section--light" aria-labelledby="hcsProgramTitle">
+        <div class="container">
+          <div class="section-head section-head--center" data-reveal>
+            <span class="label">Haryana Civil Services</span>
+            <h2 class="section-title" id="hcsProgramTitle">HCS Preparation, <em>Rooted in Haryana.</em></h2>
+            <p class="section-sub">HCS Foundation in 1-year, 2-year and 3-year tracks — prelims, mains and interview with GS, Optional and CSAT coverage, regular test series, mock interviews and personalized mentorship. Online and offline.</p>
+          </div>
+          <div class="program-detail" id="hcs-regular" data-reveal>
+            <div class="program-detail__card">
+              <div class="program-detail__visual">
+                <div class="card-art art--hcs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 8h20L12 3z"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8"/><path d="M2 21h20"/></svg></div>
+                <span class="program-detail__visual-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1 Year | 2 Year | 3 Year</span>
+              </div>
+              <div class="program-detail__body">
+                <span class="program-detail__num">FLAGSHIP PROGRAM</span>
+                <h3 class="program-detail__title">HCS Foundation Program</h3>
+                <p class="program-detail__desc">Designed for aspirants at the beginning of their preparation journey — particularly fresh graduates or final-year students. Builds a strong foundation across the entire HCS syllabus with conceptual clarity and critical skills for Prelims, Mains and Interview, advancing step-by-step from static basics to complex dynamic topics.</p>
+                <div class="program-detail__meta">
+                  <span class="chip">1 Year</span>
+                  <span class="chip">2 Year</span>
+                  <span class="chip">3 Year</span>
+                  <span class="chip chip--gold">Prelims + Mains + Interview</span>
+                </div>
+                <div class="program-detail__actions">
+                  <a class="btn btn--gold btn-magnetic" href="contact.html?course=HCS#counselling-form"><span class="btn__label">Enquire for HCS</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                  <button type="button" class="btn btn--ghost-dark" data-view-course="hcs-regular"><span class="btn__label">View Details</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="program-subhead" data-reveal>Ideal Features of the Program</h3>
+          <div class="grid grid-2" data-reveal="fade">
+            <div class="feature-group">
+              <h4>Comprehensive Syllabus Coverage</h4>
+              <ul class="check-list">
+                <li>All General Studies (Prelims &amp; Mains) and CSAT topics from scratch</li>
+                <li>Foundational knowledge in Polity, History, Geography, Economy, Environment, Science &amp; Technology, Ethics and Current Affairs</li>
+                <li>Coaching for Optional Subjects, chosen by interest and aptitude</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>NCERT and Standard Books Focus</h4>
+              <ul class="check-list">
+                <li>Dedicated NCERT sessions forming the foundation of HCS preparation</li>
+                <li>Gradual transition to advanced reference materials once basics are clear</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Gradual Learning Approach</h4>
+              <ul class="check-list">
+                <li>Step-by-step progression from basics to advanced topics</li>
+                <li>Strong command over concepts with a long-term study plan</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Daily Current Affairs &amp; Editorial Analysis</h4>
+              <ul class="check-list">
+                <li>News analysis and editorials from The Hindu, Indian Express and other relevant sources</li>
+                <li>Connecting current events with HCS topics for high-quality answers and essays</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Answer Writing and Essay Writing Practice</h4>
+              <ul class="check-list">
+                <li>Mains answer writing techniques with detailed feedback</li>
+                <li>Regular essay practice and evaluation on important, current themes</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>CSAT Preparation</h4>
+              <ul class="check-list">
+                <li>Systematic CSAT classes — logical reasoning, analytical ability, data interpretation and reading comprehension</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Test Series and Performance Analysis</h4>
+              <ul class="check-list">
+                <li>Regular Prelims and Mains test series throughout the course</li>
+                <li>Detailed analysis tracking strengths and areas needing improvement</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Mentorship and Study Plan</h4>
+              <ul class="check-list">
+                <li>Personal guidance for an effective long-term plan, time management and discipline</li>
+                <li>Customized mentorship for individual learning styles, with motivation throughout</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Interactive Sessions and Group Discussions</h4>
+              <ul class="check-list">
+                <li>Classroom discussions, peer learning and group discussions building critical thinking for Mains and Interview</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Eligibility ===== -->
+      <section class="section" aria-labelledby="eligibilityTitle">
+        <div class="container">
+          <div class="section-head section-head--center" data-reveal>
+            <span class="label">Who Can Enroll?</span>
+            <h2 class="section-title" id="eligibilityTitle">Built for Beginners, <em>Built for the Long Run.</em></h2>
+            <p class="section-sub">From the first year of college to the final push — the foundation track meets you where you are.</p>
+          </div>
+          <div class="eligibility-grid stagger" data-reveal="fade">
+            <div class="eligibility-item"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.5 2.7 2.8 6 2.8s6-1.3 6-2.8v-4.5"/></svg></div><div><h3>Eligibility</h3><p>Graduates, or first / second-year students of any recognized university, aiming at HCS in the next 2–3 years.</p></div></div>
+            <div class="eligibility-item"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></div><div><h3>Beginners</h3><p>New to HCS preparation and needing a step-by-step guide to the exam pattern, syllabus and strategy.</p></div></div>
+            <div class="eligibility-item"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><div><h3>Undergraduates</h3><p>First, second or third-year students who want to prepare alongside college education.</p></div></div>
+            <div class="eligibility-item"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><div><h3>No Background Needed</h3><p>No prior exposure to Polity, History, Economics or Ethics — knowledge is built from scratch.</p></div></div>
+            <div class="eligibility-item"><div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><div><h3>Long-Term Planners</h3><p>Ready to master concepts over 1.5–2 years and crack the exam in the first or second attempt.</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== HCS Approach ===== -->
+      <section class="section section--grad" aria-labelledby="hcsMethodTitle">
+        <div class="container">
+          <div class="section-head section-head--center" data-reveal>
+            <span class="label">The HCS Approach</span>
+            <h2 class="section-title" id="hcsMethodTitle">Structure, Practice, <em>Feedback — Repeat.</em></h2>
+          </div>
+          <div class="method-grid stagger" data-reveal="fade">
+            <article class="method-card"><div class="method-card__step">PILLAR 01</div><h3>Learn</h3><p>GS, Optional and CSAT concepts built in class, supported by dedicated study material and daily current affairs &amp; editorial discussions.</p></article>
+            <article class="method-card"><div class="method-card__step">PILLAR 02</div><h3>Write</h3><p>Answer writing practice with evaluation — expression trained continuously for the mains stage.</p></article>
+            <article class="method-card"><div class="method-card__step">PILLAR 03</div><h3>Test</h3><p>Regular Prelims and Mains test series with doubt clearing to keep preparation exam-ready.</p></article>
+            <article class="method-card"><div class="method-card__step">PILLAR 04</div><h3>Discuss</h3><p>Peer learning and group discussions sharpen perspective — a skill the interview stage rewards.</p></article>
+            <article class="method-card"><div class="method-card__step">PILLAR 05</div><h3>Interview</h3><p>Mock interviews prepare you for the panel with structured feedback and personality-focused sessions.</p></article>
+            <article class="method-card"><div class="method-card__step">PILLAR 06</div><h3>Mentorship</h3><p>Personalized mentorship and counselling track your progress and keep the plan on course all year.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== HCS FAQ ===== -->
+      <section class="section section--light" aria-labelledby="hcsFaqTitle">
+        <div class="container">
+          <div class="section-head section-head--center" data-reveal>
+            <span class="label">Common Questions</span>
+            <h2 class="section-title" id="hcsFaqTitle">HCS <em>FAQs</em></h2>
+          </div>
+          <div style="max-width:820px;margin-inline:auto;" class="faq-list" data-reveal>
+            <div class="faq-item">
+              <h3><button type="button" class="faq-item__q" aria-expanded="false" aria-controls="hcs-faq-1" id="hcs-faq-q1"><span>Is Optional subject coaching included?</span><span class="faq-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span></button></h3>
+              <div class="faq-item__a" id="hcs-faq-1" role="region" aria-labelledby="hcs-faq-q1"><div><p>Yes — Optional subject coaching is part of the HCS Regular Program, along with GS and CSAT coverage, answer writing practice and doubt clearing. Discuss your optional choice with our counsellors.</p></div></div>
+            </div>
+            <div class="faq-item">
+              <h3><button type="button" class="faq-item__q" aria-expanded="false" aria-controls="hcs-faq-2" id="hcs-faq-q2"><span>Can working professionals join the program?</span><span class="faq-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span></button></h3>
+              <div class="faq-item__a" id="hcs-faq-2" role="region" aria-labelledby="hcs-faq-q2"><div><p>Yes. Working professionals are among the groups the program is designed for, and both online and offline coaching options are available to suit different schedules.</p></div></div>
+            </div>
+            <div class="faq-item">
+              <h3><button type="button" class="faq-item__q" aria-expanded="false" aria-controls="hcs-faq-3" id="hcs-faq-q3"><span>What are the batch timings and fees?</span><span class="faq-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span></button></h3>
+              <div class="faq-item__a" id="hcs-faq-3" role="region" aria-labelledby="hcs-faq-q3"><div><p>Batch plans, timings and fee details are shared during counselling. Call +91 70272 22123 or submit the enquiry form and our team will get back to you.</p></div></div>
+            </div>
+          </div>
+          <div style="text-align:center;margin-top:34px;" data-reveal>
+            <a class="btn btn--outline" href="faq.html?cat=hcs"><span class="btn__label">View All FAQs</span></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== Shared CTA ===== -->
+    <section class="section cta-band" aria-labelledby="ctaTitle">
+      <div class="container">
+        <div class="cta-band__card" data-reveal="scale">
+          <div class="cta-band__glow cta-band__glow--1" aria-hidden="true"></div>
+          <div class="cta-band__glow cta-band__glow--2" aria-hidden="true"></div>
+          <div class="cta-band__inner">
+            <span class="label" style="justify-content:center;color:var(--accent);">Free Counselling</span>
+            <h2 class="cta-band__title" id="ctaTitle">Ready to Begin Your <em>Civil Services Journey?</em></h2>
+            <p class="cta-band__desc">Talk to our academic counsellors and get a personalized roadmap for UPSC or HCS.</p>
+            <div class="cta-band__actions">
+              <a class="btn btn--gold btn--lg btn-magnetic" href="contact.html#counselling-form"><span class="btn__label">Enquire Now</span></a>
+              <a class="btn btn--glass btn--lg" href="tel:+917027222123"><span class="btn__label">+91 70272 22123</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-root"></div>
+
+  <script src="js/navigation.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/courses.js" defer></script>
+  <script>
+    /* UPSC | HCS tab toggle */
+    (function () {
+      function initTabs() {
+        var upscBtn = document.getElementById('tabUpscBtn');
+        var hcsBtn = document.getElementById('tabHcsBtn');
+        var upscPanel = document.getElementById('section-upsc');
+        var hcsPanel = document.getElementById('section-hcs');
+        if (!upscBtn || !hcsBtn || !upscPanel || !hcsPanel) { return; }
+
+        function reveal(panel) {
+          panel.querySelectorAll('[data-reveal]:not(.is-revealed)').forEach(function (el) {
+            el.classList.add('is-revealed');
+            if (el.classList.contains('stagger')) {
+              Array.prototype.forEach.call(el.children, function (c) { c.style.opacity = '1'; });
+            }
+          });
+          if (window.GIAS && window.GIAS.animateCounter) {
+            panel.querySelectorAll('[data-count]').forEach(window.GIAS.animateCounter);
+          }
+        }
+
+        function show(tab, scroll) {
+          var isUpsc = tab === 'upsc';
+          upscBtn.classList.toggle('is-active', isUpsc);
+          hcsBtn.classList.toggle('is-active', !isUpsc);
+          upscBtn.setAttribute('aria-selected', isUpsc ? 'true' : 'false');
+          hcsBtn.setAttribute('aria-selected', !isUpsc ? 'true' : 'false');
+          upscPanel.hidden = !isUpsc;
+          hcsPanel.hidden = isUpsc;
+          reveal(isUpsc ? upscPanel : hcsPanel);
+          try {
+            var url = new URL(window.location.href);
+            url.hash = isUpsc ? 'upsc' : 'hcs';
+            history.replaceState(null, '', url.toString());
+          } catch (e) { /* ignore */ }
+          if (scroll) {
+            var target = (isUpsc ? upscPanel : hcsPanel).querySelector('section');
+            if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+          }
+        }
+
+        upscBtn.addEventListener('click', function () { show('upsc', true); });
+        hcsBtn.addEventListener('click', function () { show('hcs', true); });
+
+        /* deep link: #hcs / ?tab=hcs, or any anchor living inside the HCS panel */
+        var initial = 'upsc';
+        try {
+          var params = new URLSearchParams(window.location.search);
+          if (params.get('tab') === 'hcs') { initial = 'hcs'; }
+        } catch (e) { /* ignore */ }
+        var hash = window.location.hash;
+        if (hash === '#hcs' || hash === '#hcs-regular') { initial = 'hcs'; }
+        else if (hash && hash.length > 1) {
+          var anchorEl = document.getElementById(hash.slice(1));
+          if (anchorEl && hcsPanel.contains(anchorEl)) { initial = 'hcs'; }
+        }
+        if (initial === 'hcs') { show('hcs', false); }
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initTabs);
+      } else {
+        initTabs();
+      }
+    })();
+  </script>
+</body>
+</html>

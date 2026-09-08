@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPM Institutes (IIMs, JIPMAT, NALSAR, IIFT) — Genius IAS Rohtak</title>
+  <meta name="description" content="IPM institute guide at Genius IAS Rohtak — IIM Indore, Rohtak, Ranchi, Jammu, Bodhgaya, JIPMAT, NALSAR and IIFT Kakinada intake, eligibility, admission process and gender diversity, with aptitude preparation and mentorship.">
+  <meta property="og:title" content="IPM Institutes Guide — Genius IAS | School of Humanities">
+  <meta property="og:description" content="Every IPM route compared — intake, eligibility, selection and diversity — plus aptitude-first preparation.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#071A63">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23071A63'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' font-weight='700' fill='%23FFC928' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+</head>
+<body data-page="ipm">
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="preloader" id="preloader" role="status" aria-label="Loading">
+    <div class="preloader__logo">
+      <img class="preloader__img" src="images/logo.jpeg" alt="Genius IAS logo" width="300" height="78">
+      <div class="preloader__name">Genius IAS</div>
+      <div class="preloader__sub">School of Humanities</div>
+    </div>
+    <div class="preloader__bar" aria-hidden="true"></div>
+  </div>
+
+  <div id="navbar-root"></div>
+
+  <main id="main">
+
+    <!-- ===== Hero ===== -->
+    <section class="page-hero" aria-label="Page introduction">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__blob hero__blob--2"></div>
+        <div class="hero__blob hero__blob--3"></div>
+      </div>
+      <div class="container">
+        <div class="page-hero__inner">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            <span class="current" aria-current="page">IPM</span>
+          </nav>
+          <span class="label">Management Entrance Preparation</span>
+          <h1 class="page-hero__title">IPM: Every Institute, <em>One Preparation.</em></h1>
+          <p class="page-hero__desc">Five IIMs, JIPMAT, NALSAR and IIFT Kakinada — compare intake, eligibility, selection and diversity for each IPM route, then prepare aptitude, awareness and reasoning with mock tests and mentorship.</p>
+          <div class="page-hero__chips">
+            <span class="chip chip--gold">IIM Indore</span>
+            <span class="chip">IIM Rohtak</span>
+            <span class="chip">IIM Ranchi</span>
+            <span class="chip">IIM Jammu</span>
+            <span class="chip">IIM Bodhgaya</span>
+            <span class="chip">JIPMAT</span>
+            <span class="chip">NALSAR</span>
+            <span class="chip">IIFT Kakinada</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ===== IPM institute tabs ===== -->
+    <section class="section section--light" aria-labelledby="ipmInstitutesTitle">
+      <div class="container">
+        <div class="section-head section-head--center" data-reveal>
+          <span class="label">IPM Destinations</span>
+          <h2 class="section-title" id="ipmInstitutesTitle">Every Institute. <em>Every Detail.</em></h2>
+          <p class="section-sub">Intake, eligibility, admission process and gender diversity for each IPM route — pick an institute to see its complete picture.</p>
+        </div>
+
+        <div class="course-toggle course-toggle--grid cols-4" role="tablist" aria-label="Choose IPM institute" data-reveal>
+          <button type="button" class="course-toggle__btn is-active" id="ipmIndoreBtn" role="tab" aria-selected="true" aria-controls="ipmIndorePanel">IIM Indore</button>
+          <button type="button" class="course-toggle__btn" id="ipmRohtakBtn" role="tab" aria-selected="false" aria-controls="ipmRohtakPanel">IIM Rohtak</button>
+          <button type="button" class="course-toggle__btn" id="ipmRanchiBtn" role="tab" aria-selected="false" aria-controls="ipmRanchiPanel">IIM Ranchi</button>
+          <button type="button" class="course-toggle__btn" id="ipmJammuBtn" role="tab" aria-selected="false" aria-controls="ipmJammuPanel">IIM Jammu</button>
+          <button type="button" class="course-toggle__btn" id="ipmBodhgayaBtn" role="tab" aria-selected="false" aria-controls="ipmBodhgayaPanel">IIM Bodhgaya</button>
+          <button type="button" class="course-toggle__btn" id="ipmJipmatBtn" role="tab" aria-selected="false" aria-controls="ipmJipmatPanel">JIPMAT</button>
+          <button type="button" class="course-toggle__btn" id="ipmNalsarBtn" role="tab" aria-selected="false" aria-controls="ipmNalsarPanel">NALSAR</button>
+          <button type="button" class="course-toggle__btn" id="ipmIiftBtn" role="tab" aria-selected="false" aria-controls="ipmIiftPanel">IIFT Kakinada</button>
+        </div>
+
+        <!-- ============ IIM INDORE PANEL ============ -->
+        <div id="ipmIndorePanel" data-ipm-panel="indore" role="tabpanel" aria-labelledby="ipmIndoreBtn">
+          <div class="program-detail" data-reveal>
+            <div class="program-detail__card">
+              <div class="program-detail__visual">
+                <div class="card-art art--ipm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+                <span class="program-detail__visual-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 Years · BBA + MBA</span>
+              </div>
+              <div class="program-detail__body">
+                <span class="program-detail__num">IPM 01</span>
+                <h3 class="program-detail__title">IIM Indore — Integrated Programme in Management</h3>
+                <p class="program-detail__desc">The original five-year IPM for students passing Class 12 — a head start in management with world-class IIM faculty, the brand value of an IIM graduate alongside graduation, and stronger employability through a wider training horizon. Worth attempting even alongside a bachelor&rsquo;s elsewhere.</p>
+                <div class="program-detail__meta"><span class="chip">~150 Seats</span><span class="chip">IPMAT + Interview</span><span class="chip chip--gold">Residential Program</span></div>
+                <div class="program-detail__actions">
+                  <a class="btn btn--gold" href="contact.html?course=IPM#counselling-form"><span class="btn__label">Prepare for IIM Indore</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-2" data-reveal="fade">
+            <div class="feature-group">
+              <h4>Intake</h4>
+              <p>Around 150 seats in recent admission cycles. Confirm the current cycle&rsquo;s intake during counselling.</p>
+            </div>
+            <div class="feature-group">
+              <h4>Eligibility Criteria</h4>
+              <ul class="check-list">
+                <li>Passed Class XII (or appearing in the admission year) with qualifying years as notified</li>
+                <li>Passed Class X / SSC</li>
+                <li>Age bar as notified each cycle, with relaxation for SC / ST / PwD candidates</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Admission Process</h4>
+              <ul class="check-list">
+                <li>IPMAT (IIM Indore) aptitude test followed by Personal Interview</li>
+                <li>Final merit in recent cycles: roughly 65% test score + 35% interview</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Gender Diversity</h4>
+              <p>No separate published gender-diversity weightage for IPM — selection rests on the aptitude test and interview. Confirm the current cycle&rsquo;s policy during counselling.</p>
+            </div>
+          </div>
+
+          <h3 class="program-subhead" data-reveal>Why IPM at Indore?</h3>
+          <div class="grid grid-2" data-reveal="fade">
+            <div class="feature-group">
+              <ul class="check-list">
+                <li>Better management training thanks to a wider horizon and world-class IIM faculty</li>
+                <li>The brand value of being an IIM graduate alongside your graduation</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <ul class="check-list">
+                <li>Much improved employability versus traditional graduation options</li>
+                <li>Relatively easier entrance test compared to post-graduation management entrances</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ IIM ROHTAK PANEL ============ -->
+        <div id="ipmRohtakPanel" data-ipm-panel="rohtak" role="tabpanel" aria-labelledby="ipmRohtakBtn" hidden>
+          <div class="program-detail" data-reveal>
+            <div class="program-detail__card">
+              <div class="program-detail__visual">
+                <div class="card-art art--hcs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 8h20L12 3z"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8"/><path d="M2 21h20"/></svg></div>
+                <span class="program-detail__visual-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 198 Seats · BBA + MBA</span>
+              </div>
+              <div class="program-detail__body">
+                <span class="program-detail__num">IPM 02</span>
+                <h3 class="program-detail__title">IIM Rohtak — Integrated Programme in Management</h3>
+                <p class="program-detail__desc">Launched in 2019 for students after Class XII aiming at business management. Completing five years earns an MBA from IIM Rohtak; exiting after three years earns a BBA.</p>
+                <div class="program-detail__meta"><span class="chip">IPMAT + Interview</span><span class="chip">BBA Exit Option</span><span class="chip chip--gold">+4 / −1 Marking</span></div>
+                <div class="program-detail__actions">
+                  <a class="btn btn--gold" href="contact.html?course=IPM#counselling-form"><span class="btn__label">Prepare for IIM Rohtak</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-2" data-reveal="fade">
+            <div class="feature-group">
+              <h4>Intake</h4>
+              <p>198 seats (including EWS) in the 2025 admission cycle. Confirm the current cycle&rsquo;s intake during counselling.</p>
+            </div>
+            <div class="feature-group">
+              <h4>Eligibility Criteria</h4>
+              <ul class="check-list">
+                <li>Minimum 60% (55% for SC / ST / DAP) in Class X and Class XII</li>
+                <li>Maximum 20 years of age as of June 30 of the admission year, with relaxation for reserved categories as notified</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Admission Process</h4>
+              <ul class="check-list">
+                <li>IPM Aptitude Test — QA, Logical Reasoning and Verbal Ability (40 questions each, 120 minutes, +4 / −1, all MCQ)</li>
+                <li>Personal Interview for shortlisted candidates; final merit — aptitude test 55%, interview 15%, Class X 10%, Class XII 20%</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Gender Diversity</h4>
+              <p>Rohtak formally recognizes gender diversity in admissions, and recent IPM batches have recorded very strong female representation. Confirm the current cycle&rsquo;s diversity weightage during counselling.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ IIM RANCHI PANEL ============ -->
+        <div id="ipmRanchiPanel" data-ipm-panel="ranchi" role="tabpanel" aria-labelledby="ipmRanchiBtn" hidden>
+          <div class="program-detail" data-reveal>
+            <div class="program-detail__card">
+              <div class="program-detail__visual">
+                <div class="card-art art--gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+                <span class="program-detail__visual-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 Years · BBA-MBA</span>
+              </div>
+              <div class="program-detail__body">
+                <span class="program-detail__num">IPM 03</span>
+                <h3 class="program-detail__title">IIM Ranchi — Integrated Programme in Management</h3>
+                <p class="program-detail__desc">A full-time 5-year blended business-studies course from undergraduate to postgraduate level (integrated BBA-MBA), awarding an MBA at the end of the programme.</p>
+                <div class="program-detail__meta"><span class="chip">IPMAT + Interview</span><span class="chip">Academics 20%</span><span class="chip chip--gold">+5 Gender Bonus</span></div>
+                <div class="program-detail__actions">
+                  <a class="btn btn--gold" href="contact.html?course=IPM#counselling-form"><span class="btn__label">Prepare for IIM Ranchi</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-2" data-reveal="fade">
+            <div class="feature-group">
+              <h4>Intake</h4>
+              <p>Around 120 seats in recent admission cycles, under Government of India reservation policy. Confirm the current cycle&rsquo;s intake during counselling.</p>
+            </div>
+            <div class="feature-group">
+              <h4>Eligibility Criteria</h4>
+              <ul class="check-list">
+                <li>Minimum 60% aggregate typically required in Class X and XII, with GoI relaxations — confirm the current cycle</li>
+                <li>Separate online application on the IIM Ranchi website is mandatory alongside the aptitude test</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Admission Process</h4>
+              <ul class="check-list">
+                <li>Aptitude test (IPMAT) 50% — 25% verbal ability + 25% quant — plus Personal Interview 30% and academic profile 20%</li>
+                <li>Academics scored on SSC and HSC slabs, topped by the interview-stage merit list</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Gender Diversity</h4>
+              <p>5 bonus marks added to the composite score for female and transgender candidates (added to the score, not the total).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ IIM JAMMU PANEL ============ -->
+        <div id="ipmJammuPanel" data-ipm-panel="jammu" role="tabpanel" aria-labelledby="ipmJammuBtn" hidden>
+          <div class="program-detail" data-reveal>
+            <div class="program-detail__card">
+              <div class="program-detail__visual">
+                <div class="card-art art--cuet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                <span class="program-detail__visual-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 Years · STEM Blend</span>
+              </div>
+              <div class="program-detail__body">
+                <span class="program-detail__num">IPM 04</span>
+                <h3 class="program-detail__title">IIM Jammu — Integrated Programme in Management</h3>
+                <p class="program-detail__desc">A five-year residential programme blending science, social science and management — integrating management education with STEM. Multiple exits: certificate after year one, advanced certificate after year two, BBA after three years and MBA after five.</p>
+                <div class="program-detail__meta"><span class="chip">JIPMAT Route</span><span class="chip">CGPA 6.0 to MBA</span><span class="chip chip--gold">Residential Program</span></div>
+                <div class="program-detail__actions">
+                  <a class="btn btn--gold" href="contact.html?course=IPM#counselling-form"><span class="btn__label">Prepare for IIM Jammu</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-2" data-reveal="fade">
+            <div class="feature-group">
+              <h4>Intake</h4>
+              <p>Around 90 seats in recent admission cycles. Confirm the current cycle&rsquo;s intake during counselling.</p>
+            </div>
+            <div class="feature-group">
+              <h4>Eligibility Criteria</h4>
+              <ul class="check-list">
+                <li>Minimum 60% aggregate typically required in Class X and XII, with relaxations as notified — confirm the current cycle</li>
+                <li>Minimum CGPA of 6.00 required to continue into the MBA years, which merge with the flagship MBA programme</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Admission Process</h4>
+              <ul class="check-list">
+                <li>Admission through JIPMAT conducted by the National Testing Agency</li>
+                <li>Merit list prepared from JIPMAT scores under GoI reservation policy</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Gender Diversity</h4>
+              <p>No separate published gender-diversity weightage found for IPM Jammu — confirm the current cycle&rsquo;s policy during counselling.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ IIM BODHGAYA PANEL ============ -->
+        <div id="ipmBodhgayaPanel" data-ipm-panel="bodhgaya" role="tabpanel" aria-labelledby="ipmBodhgayaBtn" hidden>
+          <div class="program-detail" data-reveal>
+            <div class="program-detail__card">
+              <div class="program-detail__visual">
+                <div class="card-art art--upsc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.5 2.7 2.8 6 2.8s6-1.3 6-2.8v-4.5"/><line x1="22" y1="10" x2="22" y2="16"/></svg></div>
+                <span class="program-detail__visual-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> ~120 Seats · BBM + MBA</span>
+              </div>
+              <div class="program-detail__body">
+                <span class="program-detail__num">IPM 05</span>
+                <h3 class="program-detail__title">IIM Bodhgaya — Integrated Programme in Management</h3>
+                <p class="program-detail__desc">Launched from the 2021 academic session with experiential learning, international exposure and a holistic curriculum — preparing candidates from foundation level for leadership in corporates and government. Awards BBM and MBA; exiting after three years earns the BBM.</p>
+                <div class="program-detail__meta"><span class="chip">JIPMAT Route</span><span class="chip">BBM Exit Option</span><span class="chip chip--gold">70% Gender-Neutral Seats</span></div>
+                <div class="program-detail__actions">
+                  <a class="btn btn--gold" href="contact.html?course=IPM#counselling-form"><span class="btn__label">Prepare for IIM Bodhgaya</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-2" data-reveal="fade">
+            <div class="feature-group">
+              <h4>Intake</h4>
+              <p>Around 120 seats as per the official admission policy. Confirm the current cycle&rsquo;s intake during counselling.</p>
+            </div>
+            <div class="feature-group">
+              <h4>Eligibility Criteria</h4>
+              <ul class="check-list">
+                <li>Minimum 60% aggregate typically required in Class X and XII, with relaxations as notified — confirm the current cycle</li>
+                <li>Open to Indian citizens and eligible OCI / PIO candidates under the official policy</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Admission Process</h4>
+              <ul class="check-list">
+                <li>Admission through JIPMAT conducted by the National Testing Agency</li>
+                <li>Merit list from JIPMAT scores with category-wise sectional cut-offs, under GoI reservation policy</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Gender Diversity</h4>
+              <p>70% of seats are gender-neutral under the official admission policy.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ JIPMAT PANEL ============ -->
+        <div id="ipmJipmatPanel" data-ipm-panel="jipmat" role="tabpanel" aria-labelledby="ipmJipmatBtn" hidden>
+          <div class="program-detail" data-reveal>
+            <div class="program-detail__card">
+              <div class="program-detail__visual">
+                <div class="card-art art--clat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="m9 14 2 2 4-4"/></svg></div>
+                <span class="program-detail__visual-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> NTA · Jammu + Bodhgaya</span>
+              </div>
+              <div class="program-detail__body">
+                <span class="program-detail__num">IPM 06</span>
+                <h3 class="program-detail__title">JIPMAT — Joint IPM Admission Test</h3>
+                <p class="program-detail__desc">The national-level entrance for the 5-year Integrated Programme in Management at IIM Bodh Gaya and IIM Jammu, conducted by the National Testing Agency (NTA).</p>
+                <div class="program-detail__meta"><span class="chip">QA · LR · VA</span><span class="chip">+4 / −1 Marking</span><span class="chip chip--gold">One Test, Two IIMs</span></div>
+                <div class="program-detail__actions">
+                  <a class="btn btn--gold" href="contact.html?course=IPM#counselling-form"><span class="btn__label">Prepare for JIPMAT</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="program-subhead" data-reveal>Exam Pattern (Recent NTA Cycles)</h3>
+          <div class="table-scroll" data-reveal>
+            <table class="exam-table">
+              <thead><tr><th>Section</th><th>Details</th></tr></thead>
+              <tbody>
+                <tr><td>Conducted by</td><td>National Testing Agency (NTA)</td></tr>
+                <tr><td>For</td><td>IPM at IIM Jammu and IIM Bodh Gaya</td></tr>
+                <tr><td>Sections</td><td>Quantitative Aptitude · Logical Reasoning · Verbal Ability</td></tr>
+                <tr><td>Marking</td><td>+4 per correct answer · −1 per wrong answer (all MCQ)</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note" data-reveal>Question counts and timings follow the NTA notification each year — confirm the current pattern during counselling.</p>
+
+          <div class="grid grid-2" data-reveal="fade" style="margin-top:22px;">
+            <div class="feature-group">
+              <h4>Eligibility Criteria</h4>
+              <p>Eligibility follows the participating IIMs&rsquo; IPM criteria — confirm age, qualifying years and marks for the current cycle during counselling.</p>
+            </div>
+            <div class="feature-group">
+              <h4>Gender Diversity</h4>
+              <p>The test itself carries no diversity weightage — diversity policies apply at institute level (see IIM Jammu and IIM Bodhgaya tabs).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ NALSAR PANEL ============ -->
+        <div id="ipmNalsarPanel" data-ipm-panel="nalsar" role="tabpanel" aria-labelledby="ipmNalsarBtn" hidden>
+          <div class="program-detail" data-reveal>
+            <div class="program-detail__card">
+              <div class="program-detail__visual">
+                <div class="card-art art--soh"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/><path d="m19 15 .7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7.7-2z"/></svg></div>
+                <span class="program-detail__visual-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 Years · 15 Terms</span>
+              </div>
+              <div class="program-detail__body">
+                <span class="program-detail__num">IPM 07</span>
+                <h3 class="program-detail__title">NALSAR DoMS — Integrated Programme in Management</h3>
+                <p class="program-detail__desc">A unique five-year IPM producing legally aware managers — management education embedded with law, best-in-class faculty and dialogue with business and thought leaders. Fifteen terms: three years of theoretical foundations across philosophy, psychology, mathematics, economics, law and management, then two years of transformation into business leaders. Voluntary BBA exit after three years.</p>
+                <div class="program-detail__meta"><span class="chip">BBA + MBA</span><span class="chip">Law + Management</span><span class="chip chip--gold">BBA Exit Option</span></div>
+                <div class="program-detail__actions">
+                  <a class="btn btn--gold" href="contact.html?course=IPM#counselling-form"><span class="btn__label">Prepare for NALSAR IPM</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-2" data-reveal="fade">
+            <div class="feature-group">
+              <h4>Intake</h4>
+              <p>Limited seats each cycle. Confirm the current intake during counselling.</p>
+            </div>
+            <div class="feature-group">
+              <h4>Eligibility Criteria</h4>
+              <ul class="check-list">
+                <li>Class 10+2 or equivalent with minimum 60% aggregate (50% for SC / ST)</li>
+                <li>Valid CLAT (UG) / IPMAT Indore / IPMAT Rohtak / JIPMAT / JEE (Mains) scorecard</li>
+                <li>Appearing candidates may apply with test registration proof; scorecards due before the application deadline</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Admission Process</h4>
+              <ul class="check-list">
+                <li>Shortlisting for Personal Interview on entrance-test merit plus Class 10 and 12 performance</li>
+                <li>Multiple test scores allowed — best score considered via standardization; submit every scorecard you hold</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Gender Diversity</h4>
+              <p>No separate published gender-diversity weightage found — confirm the current cycle&rsquo;s policy during counselling.</p>
+            </div>
+          </div>
+
+          <h3 class="program-subhead" data-reveal>Selection Weightage</h3>
+          <div class="table-scroll" data-reveal>
+            <table class="exam-table">
+              <thead><tr><th>Component</th><th>Weightage</th></tr></thead>
+              <tbody>
+                <tr><td>Entrance examination performance</td><td>50%</td></tr>
+                <tr><td>Class 10 performance</td><td>12.5%</td></tr>
+                <tr><td>Class 10+2 performance</td><td>12.5%</td></tr>
+                <tr><td>Personal Interview</td><td>25%</td></tr>
+                <tr><td>Total</td><td>100%</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ============ IIFT KAKINADA PANEL ============ -->
+        <div id="ipmIiftPanel" data-ipm-panel="iift" role="tabpanel" aria-labelledby="ipmIiftBtn" hidden>
+          <div class="program-detail" data-reveal>
+            <div class="program-detail__card">
+              <div class="program-detail__visual">
+                <div class="card-art art--upsc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></div>
+                <span class="program-detail__visual-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> BBA Analytics + MBA IB</span>
+              </div>
+              <div class="program-detail__body">
+                <span class="program-detail__num">IPM 08</span>
+                <h3 class="program-detail__title">IIFT Kakinada — Integrated Programme in Management</h3>
+                <p class="program-detail__desc">A five-year IPM integrating management with STEM — BBA (Business Analytics) after three years and MBA (International Business) after five. Semester system for three years, trimester system for the final two; fully residential.</p>
+                <div class="program-detail__meta"><span class="chip">IPMAT Indore Route</span><span class="chip">Maths Mandatory</span><span class="chip chip--gold">Residential Program</span></div>
+                <div class="program-detail__actions">
+                  <a class="btn btn--gold" href="contact.html?course=IPM#counselling-form"><span class="btn__label">Prepare for IIFT IPM</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-2" data-reveal="fade">
+            <div class="feature-group">
+              <h4>Intake</h4>
+              <p>Limited seats each cycle. Confirm the current intake during counselling.</p>
+            </div>
+            <div class="feature-group">
+              <h4>Eligibility Criteria</h4>
+              <ul class="check-list">
+                <li>10+2 in arts, commerce or science with 60% (55% for SC / ST / PwD / Transgender) in the notified years</li>
+                <li>Class 10 with 60% (55% for reserved categories) from the notified year onwards</li>
+                <li>Mathematics / Business Mathematics at +2 level is mandatory</li>
+                <li>Age bar as notified each cycle, with relaxation for reserved categories</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Admission Process</h4>
+              <ul class="check-list">
+                <li>Shortlisting on IPMAT (IIM Indore) score — apply for IPMAT first and note its registration number</li>
+                <li>Then submit IIFT&rsquo;s online application quoting the IPMAT registration number</li>
+              </ul>
+            </div>
+            <div class="feature-group">
+              <h4>Gender Diversity</h4>
+              <p>Female candidates receive 2 marks in the selection merit (male candidates 0).</p>
+            </div>
+          </div>
+
+          <h3 class="program-subhead" data-reveal>Selection Criteria</h3>
+          <div class="table-scroll" data-reveal>
+            <table class="exam-table">
+              <thead><tr><th>Parameter</th><th>Score</th></tr></thead>
+              <tbody>
+                <tr><td>Entrance test score (IPMAT Indore)</td><td>78</td></tr>
+                <tr><td>Gender diversity (Male 0 · Female 2)</td><td>2</td></tr>
+                <tr><td>Academic consistency (Class 10)</td><td>20</td></tr>
+                <tr><td>Total</td><td>100</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="program-subhead" data-reveal>Class 10 Rating Scores</h3>
+          <div class="table-scroll" data-reveal>
+            <table class="exam-table">
+              <thead><tr><th>Percent in Class 10</th><th>Rating Score</th></tr></thead>
+              <tbody>
+                <tr><td>Above 55 up to 60</td><td>4</td></tr>
+                <tr><td>Above 60 up to 70</td><td>6</td></tr>
+                <tr><td>Above 70 up to 80</td><td>10</td></tr>
+                <tr><td>Above 80 up to 90</td><td>16</td></tr>
+                <tr><td>Above 90</td><td>20</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="grid grid-2" data-reveal="fade" style="margin-top:22px;">
+            <div class="feature-group">
+              <h4>Fees &amp; Application</h4>
+              <ul class="check-list">
+                <li>About Rs. 4 lakh per annum for the first three years, excluding hostel and mess; years four–five per MBA (IB) fees</li>
+                <li>Application fee — General / OBC: Rs. 4,130 (IPMAT) + Rs. 2,000 (IIFT); SC / ST / PwD: Rs. 2,065 + Rs. 1,000</li>
+                <li>Confirm the current cycle&rsquo;s fees and dates during counselling</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section cta-band" aria-labelledby="ctaTitle">
+      <div class="container">
+        <div class="cta-band__card" data-reveal="scale">
+          <div class="cta-band__glow cta-band__glow--1" aria-hidden="true"></div>
+          <div class="cta-band__glow cta-band__glow--2" aria-hidden="true"></div>
+          <div class="cta-band__inner">
+            <span class="label" style="justify-content:center;color:var(--accent);">IPM Counselling</span>
+            <h2 class="cta-band__title" id="ctaTitle">Early Start. <em>Sharp Aptitude.</em></h2>
+            <p class="cta-band__desc">Book a free counselling session to plan IPM preparation alongside school — or as a dedicated track.</p>
+            <div class="cta-band__actions">
+              <a class="btn btn--gold btn--lg btn-magnetic" href="contact.html?course=IPM#counselling-form"><span class="btn__label">Get Free Counselling</span></a>
+              <a class="btn btn--glass btn--lg" href="tel:+917027222123"><span class="btn__label">Call +91 70272 22123</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-root"></div>
+
+  <script>
+    /* IPM institute tabs */
+    (function () {
+      function initIpmTabs() {
+        var tabs = [
+          { btn: document.getElementById('ipmIndoreBtn'), panel: document.getElementById('ipmIndorePanel') },
+          { btn: document.getElementById('ipmRohtakBtn'), panel: document.getElementById('ipmRohtakPanel') },
+          { btn: document.getElementById('ipmRanchiBtn'), panel: document.getElementById('ipmRanchiPanel') },
+          { btn: document.getElementById('ipmJammuBtn'), panel: document.getElementById('ipmJammuPanel') },
+          { btn: document.getElementById('ipmBodhgayaBtn'), panel: document.getElementById('ipmBodhgayaPanel') },
+          { btn: document.getElementById('ipmJipmatBtn'), panel: document.getElementById('ipmJipmatPanel') },
+          { btn: document.getElementById('ipmNalsarBtn'), panel: document.getElementById('ipmNalsarPanel') },
+          { btn: document.getElementById('ipmIiftBtn'), panel: document.getElementById('ipmIiftPanel') }
+        ];
+        if (!tabs[0].btn || !tabs[0].panel) { return; }
+
+        function reveal(panel) {
+          panel.querySelectorAll('[data-reveal]:not(.is-revealed)').forEach(function (el) {
+            el.classList.add('is-revealed');
+            if (el.classList.contains('stagger')) {
+              Array.prototype.forEach.call(el.children, function (c) { c.style.opacity = '1'; });
+            }
+          });
+        }
+
+        function show(idx, scroll) {
+          tabs.forEach(function (t, i) {
+            var active = i === idx;
+            t.btn.classList.toggle('is-active', active);
+            t.btn.setAttribute('aria-selected', active ? 'true' : 'false');
+            t.panel.hidden = !active;
+            if (active) { reveal(t.panel); }
+          });
+          if (scroll && tabs[idx].panel) {
+            tabs[idx].panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+
+        tabs.forEach(function (t, i) {
+          t.btn.addEventListener('click', function () { show(i, false); });
+        });
+
+        /* deep link: ipm.html#ranchi etc. */
+        var map = { indore: 0, rohtak: 1, ranchi: 2, jammu: 3, bodhgaya: 4, jipmat: 5, nalsar: 6, iift: 7 };
+        var h = (window.location.hash || '').replace('#', '').toLowerCase();
+        if (map[h] !== undefined && map[h] !== 0) { show(map[h], false); }
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initIpmTabs);
+      } else {
+        initIpmTabs();
+      }
+    })();
+  </script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/courses.js" defer></script>
+</body>
+</html>
