@@ -212,7 +212,7 @@
     menu.setAttribute('aria-label', 'Site navigation');
 
     var programs = ['upsc-hcs', 'clat', 'ipm', 'cuet', 'nios'];
-    var institute = ['home', 'about', 'courses', 'humanities', 'commerce', 'faculty', 'results', 'faq', 'contact'];
+    var institute = ['home', 'about', 'courses', 'commerce', 'faculty', 'results', 'faq', 'contact'];
 
     function linkHTML(key, idx) {
       var p = PAGES[key];

@@ -16,7 +16,7 @@
 
   var COURSE_OPTIONS = [
     'UPSC', 'HCS', 'CLAT', 'AILET', 'SLAT', 'LSAT', 'NLAT', 'IPM', 'CUET', 'NIOS',
-    'School of Humanities', 'School of Commerce'
+    'School of Commerce'
   ];
 
   /* ---------------- storage helpers (safe against disabled storage) ------- */

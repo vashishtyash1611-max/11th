@@ -146,19 +146,6 @@
       iconName: 'book-open'
     },
     {
-      id: 'soh-integrated',
-      cat: 'humanities',
-      catLabel: 'School of Humanities',
-      title: 'School Integrated Program — Humanities',
-      duration: 'Class 11th & 12th',
-      badges: ['CBSE + Entrances', 'Foundation'],
-      desc: 'A school-integrated program for Class 11th & 12th students preparing for CLAT, IPM, CUET, TISS, SAT, SET and the UPSC Foundation — alongside the CBSE curriculum.',
-      features: ['CBSE Class 11th & 12th curriculum', 'CLAT · IPM · CUET · TISS · SAT · SET preparation', 'UPSC Foundation building', 'Mentorship & mock tests', 'Structured academic roadmap'],
-      page: 'school-of-humanities.html',
-      art: 'art--soh',
-      iconName: 'cap'
-    },
-    {
       id: 'soc-program',
       cat: 'commerce',
       catLabel: 'School of Commerce',
@@ -520,7 +507,7 @@
 
   /* Categories shown as cards on courses.html (exam detail entries stay
      in the catalogue so View Details modals on program pages keep working) */
-  var GRID_CATS = ['offline', 'online', 'testseries', 'humanities', 'commerce'];
+  var GRID_CATS = ['offline', 'online', 'testseries', 'commerce'];
 
   /* ---------------- Filtering + search ---------------- */
   function initCoursesPage() {

@@ -17,7 +17,6 @@
     { id: 'clat', label: 'CLAT' },
     { id: 'ipm', label: 'IPM' },
     { id: 'cuet', label: 'CUET' },
-    { id: 'soh', label: 'School of Humanities' },
     { id: 'general', label: 'General' }
   ];
 
@@ -71,16 +70,6 @@
       a: 'Yes. The School of Humanities integrated program for Class 11th and 12th prepares students for CUET along with the CBSE curriculum and other entrances like CLAT, IPM, TISS, SAT and SET.' },
     { cat: 'cuet', q: 'Which subjects and domains are covered for CUET?',
       a: 'Domain coverage depends on each student&rsquo;s subject combination in Class 11th and 12th. Share your subjects with our counsellors and they will map out the right CUET plan for you.' },
-
-    /* ---------------- School of Humanities ---------------- */
-    { cat: 'soh', q: 'What is the School of Humanities?',
-      a: 'The School of Humanities is the school-integrated wing of Genius IAS for Class 11th and 12th students. It prepares students for competitive examinations — CLAT, IPM, CUET, TISS, SAT, SET and the UPSC Foundation — along with the CBSE curriculum of Class 11th and 12th.' },
-    { cat: 'soh', q: 'Is the CBSE curriculum covered in the integrated program?',
-      a: 'Yes. The program runs the CBSE Class 11th and 12th curriculum alongside entrance preparation, so school exams and competitive exams are planned together in one structured roadmap.' },
-    { cat: 'soh', q: 'Does the program include mentorship and mock tests?',
-      a: 'Yes. Mentorship, mock tests and a structured academic roadmap — from foundation and skill building in Class 11th to entrance preparation, testing and college admission guidance in Class 12th — are core parts of the program.' },
-    { cat: 'soh', q: 'How do I take admission for Class 11th or Class 12th?',
-      a: 'Admission details and batch availability are shared during counselling. Request a free counselling session through the contact form, or call +91 70272 22123 / +91 70272 22124.' },
 
     /* ---------------- General ---------------- */
     { cat: 'general', q: 'Where is Genius IAS located?',
