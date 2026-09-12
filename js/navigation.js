@@ -177,9 +177,10 @@
     header.id = 'navbar';
 
     var links = NAV_LINKS.map(function (l) {
+      var sub = (l.page === 'nios') ? '' : '<small class="navbar__link-sub" aria-hidden="true">Mentors</small>';
       return '<li><a class="navbar__link' + ((page === l.page) ? ' is-active' : '') + '" href="' + l.href + '"' +
         ((page === l.page) ? ' aria-current="page"' : '') + '><span class="navbar__link-label">' + l.label + '</span>' +
-        '<small class="navbar__link-sub" aria-hidden="true">Mentors</small></a></li>';
+        sub + '</a></li>';
     }).join('');
 
     header.innerHTML =

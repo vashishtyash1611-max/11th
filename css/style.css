@@ -751,16 +751,18 @@ a.topbar__item:hover { color: var(--accent); }
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 3px;
   padding: 8px 18px;
+  min-height: 46px;
   font-size: .82rem;
   font-weight: 800;
   letter-spacing: .1em;
   text-transform: uppercase;
   line-height: 1.25;
-  color: var(--primary-dark);
-  background: var(--white);
-  border: 1px solid rgba(7, 26, 99, .28);
+  color: var(--white);
+  background: var(--primary-dark);
+  border: 1px solid var(--primary-dark);
   border-radius: 0;
   white-space: nowrap;
   box-shadow: 0 3px 12px -4px rgba(7, 26, 99, .3);
@@ -778,19 +780,23 @@ a.topbar__item:hover { color: var(--accent); }
   color: #C99800;
   line-height: 1;
 }
-.navbar__link:hover .navbar__link-sub,
-.navbar__link.is-active .navbar__link-sub { color: var(--accent); }
+.navbar__link:hover .navbar__link-sub { color: var(--accent); }
 .navbar__link::after { display: none; }
 .navbar__link:hover {
   color: var(--white);
   background: var(--primary-dark);
   border-color: var(--primary-dark);
 }
-.navbar__link.is-active {
-  color: var(--white);
-  background: var(--primary-dark);
+.navbar__link.is-active,
+.navbar__link.is-active:hover,
+.navbar__link[aria-current="page"] {
+  color: var(--primary-dark);
+  background: #FAF8F3;
   border-color: var(--primary-dark);
+  box-shadow: 0 3px 12px -4px rgba(7, 26, 99, .3), inset 0 -3px 0 var(--primary-dark);
 }
+.navbar__link.is-active .navbar__link-sub,
+.navbar__link[aria-current="page"] .navbar__link-sub { color: var(--primary-dark); }
 .navbar__cta.btn { border-radius: 0; }
 
 .navbar__actions { display: flex; align-items: center; gap: 14px; flex: none; }
@@ -947,9 +953,10 @@ a.topbar__item:hover { color: var(--accent); }
 .hero__media {
   position: relative;
   margin: 0 200px 0 0;
+  transform: translateX(100px);
   justify-self: end;
-  width: 450px;
-  height: 550px;
+  width: 510px;
+  height: 610px;
   flex: none;
   border-radius: 26px;
   overflow: hidden;
@@ -959,8 +966,8 @@ a.topbar__item:hover { color: var(--accent); }
   isolation: isolate;
 }
 .hero__media img {
-  width: 450px;
-  height: 550px;
+  width: 510px;
+  height: 610px;
   object-fit: cover;
   object-position: center top;
   display: block;
@@ -1030,13 +1037,14 @@ a.topbar__item:hover { color: var(--accent); }
 .hero__title {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(2.5rem, 6.2vw, 4.6rem);
-  line-height: 1.08;
+  font-size: clamp(1.9rem, 4.2vw, 3.1rem);
+  line-height: 1.12;
   margin: 26px 0 22px;
   letter-spacing: .005em;
 }
 .hero__title .line { display: block; overflow: hidden; }
 .hero__title .accent { color: var(--accent); font-style: italic; }
+.hero__title .nowrap { white-space: nowrap; }
 
 .hero__desc {
   font-size: clamp(.95rem, 1.4vw, 1.08rem);
@@ -1096,8 +1104,8 @@ a.topbar__item:hover { color: var(--accent); }
   animation: scrollLine 2s var(--ease-soft) infinite;
 }
 
-/* Floating result cards around hero */
-.hero__floats { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+/* Floating result cards around hero — removed per design update */
+.hero__floats { display: none !important; position: absolute; inset: 0; z-index: 1; pointer-events: none; }
 .float-card {
   position: absolute;
   pointer-events: auto;
@@ -1477,6 +1485,16 @@ a.topbar__item:hover { color: var(--accent); }
 }
 .journey__step h3 { font-size: 1rem; font-weight: 600; color: var(--white); margin-bottom: 6px; letter-spacing: .06em; text-transform: uppercase; }
 .journey__step p { font-size: .82rem; color: var(--text-light); line-height: 1.55; }
+
+/* Off-white variant (Learning Journey) */
+.journey--offwhite { background: #FAF8F3; color: var(--text-dark); }
+.journey--offwhite .section-title { color: var(--text-dark); }
+.journey--offwhite .section-sub { color: #4a5a8c; }
+.journey--offwhite .journey__line { background: rgba(7, 26, 99, .15); }
+.journey--offwhite .journey__dot { background: #FAF8F3; border-color: rgba(7, 26, 99, .3); }
+.journey--offwhite .journey__num { color: #8a6a00; font-weight: 700; }
+.journey--offwhite .journey__step h3 { color: var(--primary-dark); }
+.journey--offwhite .journey__step p { color: #4a5a8c; }
 
 /* ---------- 16. Results & slider ---------- */
 .slider { position: relative; }
@@ -2906,37 +2924,56 @@ body { transition: opacity .32s var(--ease-soft), transform .32s var(--ease-soft
 [data-course-panel][hidden] { display: none !important; }
 .course-item {
   position: relative;
-  background: var(--white);
-  border: 1px solid rgba(7, 26, 99, .1);
-  border-radius: 0;
+  background: linear-gradient(160deg, #0A2268 0%, #071A63 45%, #050D2A 100%);
+  border: 1px solid rgba(255, 201, 40, .35);
+  border-radius: 18px;
   padding: 28px 26px;
   display: flex;
   flex-direction: column;
   gap: 14px;
-  box-shadow: var(--shadow-card);
+  color: var(--white);
+  box-shadow: 0 22px 50px -18px rgba(4, 9, 31, .65);
   transition: transform .35s var(--ease-out), box-shadow .35s, border-color .35s;
+  overflow: hidden;
+}
+.course-item::before {
+  content: "";
+  position: absolute;
+  top: -70px; right: -70px;
+  width: 170px; height: 170px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 201, 40, .22), transparent 70%);
+  pointer-events: none;
 }
 .course-item:hover {
   transform: translateY(-6px);
-  border-color: var(--primary-dark);
-  box-shadow: 0 22px 50px -18px rgba(7, 26, 99, .35);
+  border-color: var(--accent);
+  box-shadow: 0 26px 60px -18px rgba(255, 201, 40, .3), 0 22px 50px -18px rgba(4, 9, 31, .7);
 }
 .course-item__num {
   font-family: var(--font-display);
-  font-size: 1rem;
-  letter-spacing: .1em;
-  color: var(--primary-light);
+  font-size: 2.3rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: var(--accent);
+  text-shadow: 0 4px 18px rgba(255, 201, 40, .35);
 }
-.course-item__cat { align-self: flex-start; }
-.course-item__title { font-size: 1.08rem; line-height: 1.4; color: var(--text-dark); }
+.course-item__cat { align-self: flex-start; box-shadow: var(--shadow-gold); }
+.course-item__title { font-size: 1.15rem; line-height: 1.4; font-weight: 700; color: var(--white); }
 .course-item__meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.course-item .chip {
+  background: rgba(255, 255, 255, .1);
+  border-color: rgba(184, 196, 232, .4);
+  color: var(--accent-light);
+}
 .course-item__points { display: flex; flex-direction: column; gap: 9px; margin: 2px 0 4px; }
 .course-item__points li {
   position: relative;
   padding-left: 24px;
   font-size: .86rem;
   line-height: 1.55;
-  color: #3c4a7d;
+  color: #D9E1FA;
 }
 .course-item__points li::before {
   content: "";
@@ -2952,15 +2989,16 @@ body { transition: opacity .32s var(--ease-soft), transform .32s var(--ease-soft
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding-top: 6px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(184, 196, 232, .2);
   font-size: .82rem;
   font-weight: 700;
   letter-spacing: .08em;
   text-transform: uppercase;
-  color: var(--primary-dark);
+  color: var(--accent);
 }
 .course-item__link svg { width: 16px; height: 16px; transition: transform .3s var(--ease-out); }
-.course-item__link:hover { color: var(--primary-light); }
+.course-item__link:hover { color: var(--accent-light); }
 .course-item__link:hover svg { transform: translateX(5px); }
 
 /* ---------- Program detail sub-sections (Ideal Features / Who Can Enroll) ---------- */
