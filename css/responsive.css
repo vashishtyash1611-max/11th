@@ -46,6 +46,10 @@
   .hero__floats { display: none; }
   .hero__inner { grid-template-columns: 1fr; gap: 36px; }
   .hero__content { max-width: 100%; }
+  .page-hero__grid { grid-template-columns: 1fr; }
+  .page-hero__grid .page-hero__inner { max-width: 100%; }
+  .hero-video { transform: none; }
+  .hero-video--short { justify-self: center; }
   .hero__media { width: 510px; max-width: 100%; height: 610px; margin: 0 auto; justify-self: center; transform: none; }
   .hero__media img { width: 510px; max-width: 100%; height: 610px; }
   .hero__title { font-size: clamp(1.8rem, 5vw, 2.6rem); }
