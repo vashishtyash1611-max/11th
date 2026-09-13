@@ -35,7 +35,7 @@
 
   /* Primary navbar links (spec order) */
   var NAV_LINKS = [
-    { label: 'UPSC|HCS', href: 'upsc-hcs.html', page: 'upsc-hcs' },
+    { label: 'UPSC | HCS', href: 'upsc-hcs.html', page: 'upsc-hcs' },
     { label: 'CLAT', href: 'clat.html', page: 'clat' },
     { label: 'IPM', href: 'ipm.html', page: 'ipm' },
     { label: 'CUET', href: 'cuet.html', page: 'cuet' },
@@ -48,7 +48,7 @@
     home: { label: 'Home', href: 'index.html' },
     about: { label: 'About Us', href: 'about.html' },
     courses: { label: 'Courses', href: 'courses.html' },
-    'upsc-hcs': { label: 'UPSC|HCS', href: 'upsc-hcs.html' },
+    'upsc-hcs': { label: 'UPSC | HCS', href: 'upsc-hcs.html' },
     upsc: { label: 'UPSC', href: 'upsc-hcs.html#upsc' },
     hcs: { label: 'HCS', href: 'upsc-hcs.html#hcs' },
     clat: { label: 'CLAT', href: 'clat.html' },

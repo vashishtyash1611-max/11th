@@ -225,19 +225,6 @@
       iconName: 'chart'
     },
     {
-      id: 'off-cuet-foundation',
-      cat: 'offline',
-      catLabel: 'Offline',
-      title: 'CUET Foundation Program',
-      duration: '2 Year',
-      badges: ['Offline', 'Class 11th & 12th'],
-      desc: 'Two-year classroom CUET foundation — NCERT-aligned domain subjects plus aptitude.',
-      features: ['Domain subjects + aptitude coverage', 'NCERT-aligned concept building', 'General test & English practice', 'Regular mocks with tracking', 'Personal mentorship & doubt clearing'],
-      page: 'cuet.html',
-      art: 'art--cuet',
-      iconName: 'book-open'
-    },
-    {
       id: 'off-cuet-regular',
       cat: 'offline',
       catLabel: 'Offline',
@@ -315,19 +302,6 @@
       page: 'ipm.html',
       art: 'art--ipm',
       iconName: 'chart'
-    },
-    {
-      id: 'on-cuet-foundation',
-      cat: 'online',
-      catLabel: 'Online',
-      title: 'CUET Foundation Program',
-      duration: '2 Year · 1500+ Videos',
-      badges: ['Online', 'Class 11th & 12th'],
-      desc: 'Two-year online CUET foundation with 1500+ NCERT-aligned domain and aptitude lessons.',
-      features: ['1500+ recorded video lessons', 'NCERT-aligned domain concept videos', 'Aptitude & English practice sets', 'Online mocks with tracking', 'Personal mentorship & doubt support'],
-      page: 'cuet.html',
-      art: 'art--cuet',
-      iconName: 'book-open'
     },
     {
       id: 'on-cuet-regular',
