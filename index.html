@@ -13,7 +13,7 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23071A63'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' font-weight='700' fill='%23FFC928' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600;700;800&family=Fraunces:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -49,6 +49,15 @@
       <div class="hero__noise" aria-hidden="true"></div>
 
       <div class="hero__inner">
+        <div class="hero-brands">
+          <p class="hero-brands__title">Our Venture</p>
+          <div class="hero-logos" aria-label="Our brands">
+            <img src="images/logo1.jpeg" alt="Genius IAS — Civil Services Preparation" fetchpriority="high">
+            <img src="images/logo2.jpeg" alt="CLAT Mentors — a venture of Genius IAS" fetchpriority="high">
+            <img src="images/logo3.jpeg" alt="IPM Mentors — a venture of Genius IAS" fetchpriority="high">
+            <img src="images/logo4.jpeg" alt="Genius IAS School — a venture of Genius IAS" fetchpriority="high">
+          </div>
+        </div>
         <div class="hero__content">
           <span class="hero__label"><span class="dot" aria-hidden="true"></span> Premium Institute for UPSC | HCS | CLAT | IPM | CUET</span>
 
@@ -416,7 +425,7 @@
       </div>
     </section>
 
-    <!-- ============ SECTION 4 · VIDEO TESTIMONIALS ============ -->
+    <!-- ============ VIDEO TESTIMONIALS ============ -->
     <section class="section section--light" id="testimonials" aria-labelledby="testimonialsTitle">
       <div class="container">
         <div class="section-head section-head--center" data-reveal>
@@ -425,38 +434,26 @@
           <p class="section-sub">Hear directly from our students about their preparation journey at Genius IAS.</p>
         </div>
 
-        <div class="grid grid-3 stagger testimonials-grid" data-reveal="fade">
-          <article class="testimonial-card">
-            <div class="hero-video" data-youtube-slot="testimonial-1">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/zWY2qF2kSz4?si=OYr8pDacl5s1767R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </article>
-          <article class="testimonial-card">
-            <div class="hero-video" data-youtube-slot="testimonial-2">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/PIcZ8glic-w?si=LmvBsUPX1REZFgGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </article>
-          <article class="testimonial-card">
-            <div class="hero-video" data-youtube-slot="testimonial-3">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/GycK_MnPBmw?si=VL8rrACsSalncwhR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </article>
-          <article class="testimonial-card">
-            <div class="hero-video" data-youtube-slot="testimonial-4">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/_1e80MLnHY4?si=BYW-1ZkaatB59H1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </article>
-          <article class="testimonial-card">
-            <div class="hero-video" data-youtube-slot="testimonial-5">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/pNonwKK1DNA?si=LYeglkStDOhus2l0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </article>
-          <article class="testimonial-card">
-            <div class="hero-video" data-youtube-slot="testimonial-6">
-              <!-- TODO: paste testimonial 6 YouTube embed iframe here when the link is ready, e.g.
-              <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID?rel=0" title="Student testimonial 6 — Genius IAS" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe> -->
-            </div>
-          </article>
+        <div class="grid grid-3 stagger shorts-grid" data-reveal="fade">
+          <div class="short-video">
+            <iframe src="https://www.youtube.com/embed/zWY2qF2kSz4?si=0IVAoSI1ZLSZ1cnl" title="Student testimonial 1 — Genius IAS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="short-video">
+            <iframe src="https://www.youtube.com/embed/PIcZ8glic-w?si=U_lykJY7ZR-vRdGV" title="Student testimonial 2 — Genius IAS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="short-video">
+            <iframe src="https://www.youtube.com/embed/GycK_MnPBmw?si=XF4VlxHnZLPw5Bnm" title="Student testimonial 3 — Genius IAS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="short-video">
+            <iframe src="https://www.youtube.com/embed/_1e80MLnHY4?si=TryaKRJaDckXqIxK" title="Student testimonial 4 — Genius IAS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="short-video">
+            <iframe src="https://www.youtube.com/embed/pNonwKK1DNA?si=mKIgyEUv-Jvfm-xd" title="Student testimonial 5 — Genius IAS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="short-video short-video--empty" aria-label="Video slot reserved for a future testimonial">
+            <!-- TODO: paste testimonial 6 YouTube embed iframe here when the link is ready -->
+            <span>Upcoming testimonial — space reserved</span>
+          </div>
         </div>
       </div>
     </section>
@@ -474,39 +471,51 @@
           <div class="slider__viewport">
             <div class="slider__track">
               <div class="slider__slide">
-                <article class="result-card">
-                  <div class="result-card__avatar" aria-hidden="true">AS</div>
-                  <div class="result-card__rank">AIR 3</div>
-                  <h3 class="result-card__name">Aditya Sharma</h3>
-                  <p class="result-card__exam">UPSC CSE 2024</p>
-                  <span class="result-card__service">IAS</span>
+                <article class="result-card result-photo">
+                  <img src="images/results/result-shourab.jpeg" alt="Shourab" loading="lazy">
+                  <div class="result-photo__body"><h3 class="result-card__name">Shourab</h3><p class="result-card__exam">Army Law School Pune · CLAT 2026</p></div>
                 </article>
               </div>
               <div class="slider__slide">
-                <article class="result-card">
-                  <div class="result-card__avatar" aria-hidden="true">PV</div>
-                  <div class="result-card__rank">AIR 12</div>
-                  <h3 class="result-card__name">Priya Verma</h3>
-                  <p class="result-card__exam">UPSC CSE 2024</p>
-                  <span class="result-card__service">IPS</span>
+                <article class="result-card result-photo">
+                  <img src="images/results/result-suprabha.jpeg" alt="Suprabha" loading="lazy">
+                  <div class="result-photo__body"><h3 class="result-card__name">Suprabha</h3><p class="result-card__exam">NLU Ranchi · BBA LLB (H)</p></div>
                 </article>
               </div>
               <div class="slider__slide">
-                <article class="result-card">
-                  <div class="result-card__avatar" aria-hidden="true">RM</div>
-                  <div class="result-card__rank">AIR 19</div>
-                  <h3 class="result-card__name">Rohan Mehta</h3>
-                  <p class="result-card__exam">UPSC CSE 2023</p>
-                  <span class="result-card__service">IAS</span>
+                <article class="result-card result-photo">
+                  <img src="images/results/result-bhoomika.jpeg" alt="Bhoomika" loading="lazy">
+                  <div class="result-photo__body"><h3 class="result-card__name">Bhoomika</h3><p class="result-card__exam">Delhi University · CUET</p></div>
                 </article>
               </div>
               <div class="slider__slide">
-                <article class="result-card">
-                  <div class="result-card__avatar" aria-hidden="true">SK</div>
-                  <div class="result-card__rank">AIR 47</div>
-                  <h3 class="result-card__name">Sneha Kulkarni</h3>
-                  <p class="result-card__exam">UPSC CSE 2023</p>
-                  <span class="result-card__service">IFS</span>
+                <article class="result-card result-photo">
+                  <img src="images/results/result-manvi.jpeg" alt="Manvi" loading="lazy">
+                  <div class="result-photo__body"><h3 class="result-card__name">Manvi</h3><p class="result-card__exam">DU CLC · BA LLB (H)</p></div>
+                </article>
+              </div>
+              <div class="slider__slide">
+                <article class="result-card result-photo">
+                  <img src="images/results/result-tejas.jpeg" alt="Tejas" loading="lazy">
+                  <div class="result-photo__body"><h3 class="result-card__name">Tejas</h3><p class="result-card__exam">NLU Gandhinagar · BA LLB (H)</p></div>
+                </article>
+              </div>
+              <div class="slider__slide">
+                <article class="result-card result-photo">
+                  <img src="images/results/result-nanshi.jpeg" alt="Nanshi" loading="lazy">
+                  <div class="result-photo__body"><h3 class="result-card__name">Nanshi</h3><p class="result-card__exam">NLU Sonipat · BBA LLB (H)</p></div>
+                </article>
+              </div>
+              <div class="slider__slide">
+                <article class="result-card result-photo">
+                  <img src="images/results/result-bhavya.jpeg" alt="Bhavya" loading="lazy">
+                  <div class="result-photo__body"><h3 class="result-card__name">Bhavya</h3><p class="result-card__exam">SLS Pune · BA LLB (H)</p></div>
+                </article>
+              </div>
+              <div class="slider__slide">
+                <article class="result-card result-photo">
+                  <img src="images/results/result-kirti-nlu.jpeg" alt="Kirti" loading="lazy">
+                  <div class="result-photo__body"><h3 class="result-card__name">Kirti</h3><p class="result-card__exam">NLU Ranchi · BBA LLB (H)</p></div>
                 </article>
               </div>
             </div>
@@ -524,11 +533,6 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </a>
         </div>
-
-        <p class="disclaimer" data-reveal>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-          <span>Results displayed are based on information available from the referenced Genius IAS sources and are shown for representation.</span>
-        </p>
       </div>
     </section>
 
