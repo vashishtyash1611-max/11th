@@ -711,6 +711,8 @@ a.topbar__item:hover { color: var(--accent); }
   border-radius: 8px;
   padding: 4px 10px;
 }
+.mobile-menu__head .navbar__logo { color: var(--white); }
+.mobile-menu__head .navbar__logo-name { font-size: 1.05rem; }
 .navbar__logo-mark {
   width: 46px; height: 46px;
   border-radius: 14px;
@@ -728,8 +730,9 @@ a.topbar__item:hover { color: var(--accent); }
 .navbar__logo-text { display: flex; flex-direction: column; line-height: 1.15; min-width: 0; }
 .navbar__logo-name {
   font-family: var(--font-display);
-  font-size: 1.22rem;
-  letter-spacing: .08em;
+  font-size: 2.375rem;
+  letter-spacing: .06em;
+  line-height: 1;
   white-space: nowrap;
 }
 .navbar__logo-sub {

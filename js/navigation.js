@@ -166,8 +166,9 @@
 
   /* ---------------- Navbar ---------------- */
   function logoHTML(href) {
-    return '<a class="navbar__logo" href="' + href + '" aria-label="Genius IAS — home">' +
-      '<img class="navbar__logo-img" src="images/logo.jpeg" alt="Genius IAS logo" width="220" height="56">' +
+    return '<a class="navbar__logo" href="' + href + '" aria-label="Genius IAS School — home">' +
+      '<img class="navbar__logo-img" src="images/logo.jpeg" alt="Genius IAS School logo" width="220" height="56">' +
+      '<span class="navbar__logo-text"><span class="navbar__logo-name">Genius IAS School</span></span>' +
     '</a>';
   }
 
@@ -316,7 +317,7 @@
               '<a class="navbar__logo" href="index.html" aria-label="Genius IAS — home">' +
                 '<span class="navbar__logo-mark" aria-hidden="true">G</span>' +
               '</a>' +
-              '<div class="footer__brand-name">GENIUS IAS</div>' +
+              '<div class="footer__brand-name">Genius IAS School</div>' +
               '<p class="footer__brand-tag">“Your Journey to Civil Services Starts Here.”</p>' +
               '<p class="footer__brand-desc">Genius IAS | School of Humanities — a Rohtak-based institute offering structured, mentorship-driven preparation for UPSC, HCS, CLAT, IPM and CUET, plus a school-integrated program for Class 11th &amp; 12th. Online and offline modes available.</p>' +
               '<div class="footer__social">' +
@@ -346,6 +347,9 @@
             '<div class="footer__col">' +
               '<h3 class="footer__col-title">Contact</h3>' +
               '<div class="footer__contact">' +
+                '<div class="footer__contact-item">' + icon('building') +
+                  '<span><strong style="color:var(--white);">Komal Educational Services</strong><br><small style="color:var(--text-light);">Registered legal name</small></span>' +
+                '</div>' +
                 '<div class="footer__contact-item">' + icon('pin') +
                   '<a href="' + SITE.mapsUrl + '" target="_blank" rel="noopener">' + SITE.addressLines.join('<br>') + '</a>' +
                 '</div>' +
