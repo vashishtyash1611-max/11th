@@ -25,8 +25,9 @@
     mapsUrl: 'https://www.google.com/maps/search/?api=1&query=' +
       encodeURIComponent('Genius IAS, Model Town, Rohtak'),
     social: {
-      instagramGIAS: 'https://www.instagram.com/geniusias/',
-      instagramSOH: 'https://www.instagram.com/school_of_humanities_official?igsh=ZGxxbzVtc3B2MXZv'
+      instagramGIAS: 'https://www.instagram.com/geniusias?igsh=MXFzdDFiNXNrMXFpbw==',
+      instagramSOH: 'https://www.instagram.com/school_of_humanities_official?igsh=ZGxxbzVtc3B2MXZv',
+      youtube: 'https://youtube.com/@geniusias?si=Cdxn1qv7XsyH4HJe'
     }
   };
   GIAS.SITE = SITE;
@@ -56,7 +57,7 @@
     humanities: { label: 'School of Humanities', href: 'school-of-humanities.html' },
     commerce: { label: 'School of Commerce', href: 'school-of-commerce.html' },
     faculty: { label: 'Mentors', href: 'faculty.html' },
-    results: { label: 'Results', href: 'results.html' },
+    reviews: { label: 'Reviews', href: 'reviews.html' },
     faq: { label: 'FAQ', href: 'faq.html' },
     contact: { label: 'Contact', href: 'contact.html' }
   };
@@ -116,7 +117,8 @@
     filter: '<polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>',
     /* filled brand icons */
     whatsapp: '<path fill="currentColor" stroke="none" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.19.05-.37-.03-.52-.07-.14-.66-1.6-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.03 1.02-1.03 2.48s1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.7.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.28.18-1.41-.08-.13-.28-.2-.58-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.89 9.89-9.89 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.43 9.89-9.88 9.89M20.46 3.49A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.33.16 11.89c0 2.1.54 4.14 1.58 5.94L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.42"/>',
-    instagram: '<rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><path d="M17.4 6.6h.01"/>'
+    instagram: '<rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><path d="M17.4 6.6h.01"/>',
+    youtube: '<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.92 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>'
   };
 
   function icon(name, cls) {
@@ -151,9 +153,10 @@
         '</div>' +
         '<div class="topbar__links">' +
           '<a href="courses.html" class="topbar__page-link">All Courses</a>' +
-          '<a href="results.html" class="topbar__page-link">Results</a>' +
+          '<a href="reviews.html" class="topbar__page-link">Reviews</a>' +
           '<div class="topbar__social">' +
             '<a href="' + SITE.social.instagramGIAS + '" target="_blank" rel="noopener" aria-label="Genius IAS on Instagram">' + icon('instagram') + '</a>' +
+            '<a href="' + SITE.social.youtube + '" target="_blank" rel="noopener" aria-label="Genius IAS on YouTube">' + icon('youtube') + '</a>' +
           '</div>' +
         '</div>' +
       '</div>';
@@ -209,7 +212,7 @@
     menu.setAttribute('aria-label', 'Site navigation');
 
     var programs = ['upsc-hcs', 'clat', 'ipm', 'cuet', 'nios'];
-    var institute = ['home', 'about', 'courses', 'commerce', 'faculty', 'results', 'faq', 'contact'];
+    var institute = ['home', 'about', 'courses', 'commerce', 'faculty', 'reviews', 'faq', 'contact'];
 
     function linkHTML(key, idx) {
       var p = PAGES[key];
@@ -310,10 +313,7 @@
           '<div class="footer__grid">' +
             /* brand */
             '<div class="footer__brand">' +
-              '<a class="navbar__logo" href="index.html" aria-label="Genius IAS — home">' +
-                '<span class="navbar__logo-mark" aria-hidden="true">G</span>' +
-              '</a>' +
-              '<div class="footer__brand-name">Genius IAS School</div>' +
+              logoHTML('index.html') +
               '<div class="footer__logos" aria-label="Our brands">' +
                 '<img src="images/logo1.jpeg" alt="Genius IAS — Civil Services Preparation" loading="lazy">' +
                 '<img src="images/logo2.jpeg" alt="CLAT Mentors — a venture of Genius IAS" loading="lazy">' +
@@ -322,7 +322,7 @@
               '</div>' +
               '<div class="footer__social">' +
                 '<a href="' + SITE.social.instagramGIAS + '" target="_blank" rel="noopener" aria-label="Genius IAS on Instagram (opens in new tab)">' + icon('instagram') + '</a>' +
-                '<a href="' + SITE.social.instagramSOH + '" target="_blank" rel="noopener" aria-label="School of Humanities on Instagram (opens in new tab)">' + icon('instagram') + '</a>' +
+                '<a href="' + SITE.social.youtube + '" target="_blank" rel="noopener" aria-label="Genius IAS on YouTube (opens in new tab)">' + icon('youtube') + '</a>' +
               '</div>' +
             '</div>' +
             /* programs */
@@ -338,7 +338,7 @@
               '<h3 class="footer__col-title">Quick Links</h3>' +
               '<ul class="footer__links">' +
                 footerLink('about') + footerLink('courses') + footerLink('faculty') +
-                footerLink('results') + footerLink('faq') + footerLink('contact') +
+                footerLink('reviews') + footerLink('faq') + footerLink('contact') +
               '</ul>' +
             '</nav>' +
             /* contact */

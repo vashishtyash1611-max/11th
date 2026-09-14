@@ -1358,6 +1358,54 @@ a.topbar__item:hover { color: var(--accent); }
 }
 .testimonials-grid .hero-video { aspect-ratio: 9 / 16; border-radius: 12px; max-width: 280px; width: 100%; margin-inline: auto; }
 
+/* Text reviews (reviews page) — Google review cards */
+.review-card {
+  background: var(--white);
+  border: 1px solid rgba(7, 26, 99, .1);
+  border-radius: 18px;
+  padding: 26px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: var(--shadow-card);
+  transition: transform .35s var(--ease-out), border-color .35s, box-shadow .35s;
+}
+.review-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 201, 40, .6);
+  box-shadow: 0 26px 60px -20px rgba(7, 26, 99, .3);
+}
+.review-card__stars { color: #f5a623; font-size: .95rem; letter-spacing: 3px; }
+.review-card__text { font-size: .92rem; line-height: 1.7; color: var(--text-dark); flex: 1 1 auto; }
+.review-card__foot { display: flex; align-items: center; gap: 12px; }
+.review-card__avatar {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  flex: none;
+  display: grid;
+  place-items: center;
+  background: var(--grad-blue);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.review-card__name { font-size: .92rem; font-weight: 600; color: var(--text-dark); }
+.review-card__meta { font-size: .75rem; color: #7a88b4; }
+.review-card__src {
+  margin-left: auto;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #5a6a9c;
+  border: 1px solid rgba(7, 26, 99, .14);
+  border-radius: var(--radius-pill);
+  padding: 4px 10px;
+  white-space: nowrap;
+}
+.review-kws { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 34px; }
+.review-kws__note { text-align: center; font-size: .82rem; color: #7a88b4; margin-top: 14px; }
+
 /* ---------- 11. Stats / trust strip ---------- */
 .stats-strip {
   position: relative;
@@ -2062,6 +2110,13 @@ a.topbar__item:hover { color: var(--accent); }
   grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
   gap: 44px;
   padding-bottom: 56px;
+}
+.footer__brand .navbar__logo { color: var(--white); margin-bottom: 18px; }
+.footer__brand .navbar__logo-img {
+  mix-blend-mode: normal;
+  background: var(--white);
+  border-radius: 10px;
+  padding: 4px 10px;
 }
 .footer__brand-name {
   font-family: var(--font-display);
