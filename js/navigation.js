@@ -167,7 +167,6 @@
   function logoHTML(href) {
     return '<a class="navbar__logo" href="' + href + '" aria-label="Genius IAS — home">' +
       '<img class="navbar__logo-img" src="images/logo.jpeg" alt="Genius IAS logo" width="220" height="56">' +
-      '<span class="navbar__logo-text"><span class="navbar__logo-name">Genius IAS</span></span>' +
     '</a>';
   }
 
@@ -313,7 +312,6 @@
           '<div class="footer__grid">' +
             /* brand */
             '<div class="footer__brand">' +
-              logoHTML('index.html') +
               '<div class="footer__logos" aria-label="Our brands">' +
                 '<img src="images/logo1.jpeg" alt="Genius IAS — Civil Services Preparation" loading="lazy">' +
                 '<img src="images/logo2.jpeg" alt="CLAT Mentors — a venture of Genius IAS" loading="lazy">' +
@@ -346,7 +344,7 @@
               '<h3 class="footer__col-title">Contact</h3>' +
               '<div class="footer__contact">' +
                 '<div class="footer__contact-item">' + icon('building') +
-                  '<span><strong style="color:var(--white);">Komal Educational Services</strong><br><small style="color:var(--text-light);">Registered legal name</small><br><strong style="color:var(--white);">Genius IAS</strong> <small style="color:var(--text-light);">(Registered Brand Name)</small></span>' +
+                  '<span><strong style="color:var(--white);">Komal Educational Services</strong><br><small style="color:var(--text-light);">Registered legal name</small></span>' +
                 '</div>' +
                 '<div class="footer__contact-item">' + icon('pin') +
                   '<a href="' + SITE.mapsUrl + '" target="_blank" rel="noopener">' + SITE.addressLines.join('<br>') + '</a>' +

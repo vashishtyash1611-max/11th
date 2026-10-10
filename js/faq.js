@@ -34,6 +34,10 @@
       a: 'The year-long Current Affairs Program includes daily current affairs, The Hindu and Indian Express analysis, a monthly magazine and compilation, and weekly quizzes. Current affairs labs are also built into the Regular Program.' },
     { cat: 'upsc', q: 'Is coaching available online as well as offline?',
       a: 'Yes. Genius IAS offers both online and offline coaching options to suit different learning preferences.' },
+    { cat: 'upsc', q: 'Which is the best UPSC coaching in Rohtak?',
+      a: 'Genius IAS in Model Town, Rohtak offers a complete UPSC ecosystem — 12-month Foundation, 10-month Regular Program, Prelims Test Series with All India ranking, Mains answer writing, year-long current affairs and 45-day interview guidance — with personal mentorship in online and offline modes. See the <a href="upsc.html">UPSC programs</a> or book free counselling.' },
+    { cat: 'upsc', q: 'Is there a UPSC foundation course for Class 11 and Class 12 students?',
+      a: 'Yes. School students can start UPSC foundation preparation during Classes 11 and 12 through the School of Humanities integrated program, which builds the habits and awareness the civil services journey needs alongside school studies. See <a href="school-of-humanities.html">School of Humanities</a> for details.' },
 
     /* ---------------- HCS ---------------- */
     { cat: 'hcs', q: 'What does the HCS Regular Program include?',
@@ -44,6 +48,8 @@
       a: 'Yes — Optional subject coaching is part of the HCS Regular Program, along with dedicated answer writing practice and doubt clearing sessions.' },
     { cat: 'hcs', q: 'Are mock interviews part of HCS preparation?',
       a: 'Yes. The HCS Regular Program includes mock interviews as part of its interview-stage preparation, alongside regular Prelims and Mains test series.' },
+    { cat: 'hcs', q: 'Where is the best HCS coaching in Rohtak?',
+      a: 'Genius IAS in Model Town, Rohtak runs a 1-year HCS Regular Program covering Prelims and Mains — GS, Optional, CSAT — with test series, mock interviews, daily current affairs, answer writing practice and personal mentorship. See the <a href="hcs.html">HCS program page</a> or book free counselling.' },
 
     /* ---------------- CLAT ---------------- */
     { cat: 'clat', q: 'How is CLAT preparation structured at Genius IAS?',
@@ -54,6 +60,10 @@
       a: 'Yes, mock tests and mentorship are part of the CLAT preparation approach, helping students build exam temperament and track improvement.' },
     { cat: 'clat', q: 'What are the batch timings and fees for CLAT coaching?',
       a: 'Batch plans, timings and fee structures are not published online and are shared during counselling. Talk to our counsellors on +91 70272 22123 or submit the counselling form and we will get back to you.' },
+    { cat: 'clat', q: 'Which is the best CLAT coaching in Rohtak?',
+      a: 'CLAT Mentors, powered by Genius IAS, is a dedicated law-entrance institute in Rohtak with student selections in CLAT, AILET, SLAT and other law entrance examinations over the past few years. Preparation covers all five CLAT sections with regular mock tests, performance analysis and personal mentorship. See the <a href="clat.html">CLAT program page</a> or book free counselling to compare batches.' },
+    { cat: 'clat', q: 'Is AILET coaching available in Rohtak?',
+      a: 'Yes. CLAT Mentors in Rohtak offers focused AILET coaching alongside CLAT preparation, with emphasis on the skills and question patterns relevant to the All India Law Entrance Test for NLU Delhi. Batch details are shared during free counselling — see <a href="clat.html">law entrances</a>.' },
 
     /* ---------------- IPM ---------------- */
     { cat: 'ipm', q: 'What does IPM preparation at Genius IAS cover?',
@@ -62,6 +72,12 @@
       a: 'Yes. IPM is one of the competitive exams covered by the School of Humanities integrated program for Class 11th and 12th students, alongside the CBSE curriculum.' },
     { cat: 'ipm', q: 'How is progress tracked in the IPM program?',
       a: 'Progress is tracked through regular mock tests and mentorship reviews, with a focus on improving accuracy, speed and section-wise performance. Specific batch plans are shared during counselling.' },
+    { cat: 'ipm', q: 'Where can I find IPM coaching in Rohtak?',
+      a: 'CLAT Mentors, powered by Genius IAS, offers IPM coaching in Rohtak covering IPMAT Indore, IPMAT Rohtak, JIPMAT and other undergraduate management entrance tests, with structured classes, mock tests and personalised mentorship. See the <a href="ipm.html">IPM program page</a> for details.' },
+    { cat: 'ipm', q: 'Is JIPMAT coaching available in Rohtak?',
+      a: 'Yes. JIPMAT preparation is part of the IPM program at CLAT Mentors, Rohtak, developing the quantitative, verbal and logical reasoning skills required for the Joint Integrated Programme in Management Admission Test. Batch details are shared during free counselling.' },
+    { cat: 'ipm', q: 'Can I prepare for IPMAT after Class 12?',
+      a: 'Yes. Students can begin IPM preparation during Classes 11 and 12 alongside school, or after completing Class 12 with a focused plan of concept revision and regular mock tests. Talk to our counsellors to pick the right track.' },
 
     /* ---------------- CUET ---------------- */
     { cat: 'cuet', q: 'What is included in CUET preparation?',

@@ -50,6 +50,9 @@
   .hero-logos img { height: 48px; }
   .hero__content { max-width: 100%; }
   .page-hero__grid { grid-template-columns: 1fr; }
+  .page-hero__grid--with-logo { grid-template-columns: 1fr; justify-items: center; }
+  .page-hero__logo-wrap { order: 2; }
+  .page-hero__logo--feature { width: min(300px, 100%); max-width: 300px; height: auto; }
   .page-hero__grid .page-hero__inner { max-width: 100%; }
   .hero-video { transform: none; }
   .hero-video--short { justify-self: center; }
@@ -314,6 +317,7 @@
   .hero__media-badge span { font-size: .62rem; }
   .page-hero .label { font-size: .6rem; letter-spacing: .18em; padding: 8px 14px; }
   .page-hero__title .nowrap { white-space: normal; }
+  .page-hero__logo { height: 48px; max-width: 220px; margin-bottom: 16px; }
   .float-card { padding: 11px 15px; gap: 10px; }
   .float-card__rank { font-size: 1.2rem; }
 
