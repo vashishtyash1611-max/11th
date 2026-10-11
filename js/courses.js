@@ -149,19 +149,6 @@
       art: 'art--cuet',
       iconName: 'book-open'
     },
-    {
-      id: 'soc-program',
-      cat: 'commerce',
-      catLabel: 'School of Commerce',
-      title: 'School of Commerce Program',
-      duration: 'Enquire for Details',
-      badges: ['Academic Excellence', 'Career Guidance'],
-      desc: 'Commerce-stream academics with career guidance, mentorship and student development. Program structure and batch details are shared by our counsellors.',
-      features: ['Academic excellence focus', 'Career guidance', 'Mentorship', 'Student development', 'Program details on counselling'],
-      page: 'school-of-commerce.html',
-      art: 'art--soc',
-      iconName: 'building'
-    },
     /* ---- Offline classroom batches (same as home screen) ---- */
     {
       id: 'off-upsc-hcs-foundation',
@@ -402,6 +389,33 @@
       page: 'cuet.html',
       art: 'art--cuet',
       iconName: 'book-open'
+    },
+    /* ---- School programs (shown after test series) ---- */
+    {
+      id: 'soc-program',
+      cat: 'commerce',
+      catLabel: 'School of Commerce',
+      title: 'School of Commerce Program',
+      duration: 'Enquire for Details',
+      badges: ['Academic Excellence', 'Career Guidance'],
+      desc: 'Commerce-stream academics with career guidance, mentorship and student development. Program structure and batch details are shared by our counsellors.',
+      features: ['Academic excellence focus', 'Career guidance', 'Mentorship', 'Student development', 'Program details on counselling'],
+      page: 'school-of-commerce.html',
+      art: 'art--soc',
+      iconName: 'building'
+    },
+    {
+      id: 'soh-program',
+      cat: 'school',
+      catLabel: 'School of Humanities',
+      title: 'School of Humanities Program',
+      duration: 'Enquire for Details',
+      badges: ['CLAT · IPM · CUET', 'Class 11th & 12th'],
+      desc: 'Humanities-stream academics integrated with CLAT, IPM, CUET and UPSC foundation for Class 11th & 12th — with mentorship and student development. Program details are shared by our counsellors.',
+      features: ['Integrated CLAT · IPM · CUET preparation', 'UPSC foundation from school years', 'Mentorship & regular assessment', 'Student development', 'Program details on counselling'],
+      page: 'school-of-humanities.html',
+      art: 'art--soh',
+      iconName: 'landmark'
     }
   ];
   GIAS.COURSES = COURSES;
@@ -434,7 +448,7 @@
     if (id === 'off-ipm-regular' || id === 'on-ipm-regular') { return COURSE_IMGS.ipmR; }
     if (id === 'off-cuet-regular' || id === 'on-cuet-regular' || id === 'cuet-prep') { return COURSE_IMGS.cuetR; }
     if (id === 'ts-clat' || id === 'ts-ipm' || id === 'ts-cuet' || id === 'ts-prelims' || id === 'ts-mains' || id === 'prelims-test-series') { return COURSE_IMGS.testSeries; }
-    if (id === 'soc-program') { return null; }
+    if (id === 'soc-program' || id === 'soh-program') { return null; }
     if (id === 'upsc-foundation') { return COURSE_IMGS.upscF; }
     if (id === 'hcs-regular') { return COURSE_IMGS.hcsF; }
     return COURSE_IMGS.upscHcs;
@@ -535,7 +549,7 @@
 
   /* Categories shown as cards on courses.html (exam detail entries stay
      in the catalogue so View Details modals on program pages keep working) */
-  var GRID_CATS = ['offline', 'online', 'testseries', 'commerce'];
+  var GRID_CATS = ['offline', 'online', 'testseries', 'commerce', 'school'];
 
   /* ---------------- Page-embedded cards ----------------
      Any container with data-course-cards="id1,id2,id3" is filled with the
