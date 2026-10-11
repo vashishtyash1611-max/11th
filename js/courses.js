@@ -417,6 +417,8 @@
   /* ---------------- Card rendering (courses.html) ---------------- */
   var COURSE_IMGS = {
     upscHcs: 'images/courses/UPSC  HCS Program.png',
+    upscF: 'images/courses/UPSC CSE Foundation Program.png',
+    hcsF: 'images/courses/HCS Foundation Program.png',
     clatF: 'images/courses/CLAT Foundation Program.png',
     clatR: 'images/courses/CLAT Regular Program.png',
     ipmF: 'images/courses/IPM Foundation Program.png',
@@ -433,6 +435,8 @@
     if (id === 'off-cuet-regular' || id === 'on-cuet-regular' || id === 'cuet-prep') { return COURSE_IMGS.cuetR; }
     if (id === 'ts-clat' || id === 'ts-ipm' || id === 'ts-cuet' || id === 'ts-prelims' || id === 'ts-mains' || id === 'prelims-test-series') { return COURSE_IMGS.testSeries; }
     if (id === 'soc-program') { return null; }
+    if (id === 'upsc-foundation') { return COURSE_IMGS.upscF; }
+    if (id === 'hcs-regular') { return COURSE_IMGS.hcsF; }
     return COURSE_IMGS.upscHcs;
   }
   function cardHTML(c, index) {
