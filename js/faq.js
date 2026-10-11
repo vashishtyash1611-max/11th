@@ -59,7 +59,7 @@
     { cat: 'clat', q: 'Are mock tests included in CLAT preparation?',
       a: 'Yes, mock tests and mentorship are part of the CLAT preparation approach, helping students build exam temperament and track improvement.' },
     { cat: 'clat', q: 'What are the batch timings and fees for CLAT coaching?',
-      a: 'Batch plans, timings and fee structures are not published online and are shared during counselling. Talk to our counsellors on +91 70272 22123 or submit the counselling form and we will get back to you.' },
+      a: 'Course fees are listed on the Courses page — Foundation programs ₹1,25,000 + GST, Regular programs ₹75,000 + GST and Test Series ₹25,000 + GST. Batch timings are shared during counselling. Talk to our counsellors on +91 70272 22123 or submit the counselling form and we will get back to you.' },
     { cat: 'clat', q: 'Which is the best CLAT coaching in Rohtak?',
       a: 'CLAT Mentors, powered by Genius IAS, is a dedicated law-entrance institute in Rohtak with student selections in CLAT, AILET, SLAT and other law entrance examinations over the past few years. Preparation covers all five CLAT sections with regular mock tests, performance analysis and personal mentorship. See the <a href="clat.html">CLAT program page</a> or book free counselling to compare batches.' },
     { cat: 'clat', q: 'Is AILET coaching available in Rohtak?',

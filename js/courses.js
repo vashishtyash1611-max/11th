@@ -21,6 +21,7 @@
       catLabel: 'UPSC | HCS',
       title: 'UPSC CSE Foundation Program',
       duration: '1 Year | 2 Year | 3 Year',
+      fee: '₹1,25,000 + GST',
       badges: ['GS + CSAT', 'Prelims + Mains + Interview'],
       desc: 'Foundation track for beginners, fresh graduates and final-year students — complete GS + CSAT from scratch with answer writing, test series and mentorship.',
       features: ['Complete GS (Prelims + Mains) & CSAT from scratch', 'NCERT foundation moving to standard references', 'Daily current affairs, answer & essay writing practice', 'Regular Prelims + Mains test series with analysis', 'Personal mentorship & study plans'],
@@ -34,6 +35,7 @@
       catLabel: 'UPSC | HCS',
       title: 'UPSC Regular Program',
       duration: '10 Months',
+      fee: '₹75,000 + GST',
       badges: ['Weekday / Weekend', 'Mains Focus'],
       desc: 'Advanced preparation for graduates with integrated Prelims + Mains + Interview coverage and answer-writing mastery.',
       features: ['Weekday / weekend options', 'Integrated Prelims + Mains + Interview', 'Answer writing mastery', 'Current affairs labs', 'Interview grooming'],
@@ -47,6 +49,7 @@
       catLabel: 'UPSC | HCS',
       title: 'Prelims Test Series',
       duration: '6 Months',
+      fee: '₹25,000 + GST',
       badges: ['40+ Tests', 'All India Ranking'],
       desc: 'Intensive test-based revision with 40+ full-length tests, detailed solutions and performance analytics.',
       features: ['40+ tests', 'All India ranking', 'GS & CSAT tests', 'Detailed solutions', 'Performance analytics'],
@@ -99,6 +102,7 @@
       catLabel: 'UPSC | HCS',
       title: 'HCS Foundation Program',
       duration: '1 Year | 2 Year | 3 Year',
+      fee: '₹1,25,000 + GST',
       badges: ['Prelims + Mains + Interview', 'Mock Interviews'],
       desc: 'Foundation track for HCS beginners, fresh graduates and final-year students — complete GS, Optional & CSAT from scratch with mentorship.',
       features: ['Complete GS (Prelims + Mains) & CSAT from scratch', 'Optional subject coaching by interest and aptitude', 'Daily current affairs, answer & essay writing practice', 'Regular Prelims + Mains test series with analysis', 'Personal mentorship, group discussions & peer learning'],
@@ -165,6 +169,7 @@
       catLabel: 'Offline',
       title: 'UPSC | HCS Program',
       duration: 'Classroom · Rohtak',
+      fee: '₹1,00,000 + GST',
       badges: ['Offline', 'GS + CSAT'],
       desc: 'Classroom foundation program for UPSC & HCS at the Rohtak campus — daily GS + CSAT teaching with mentorship.',
       features: ['Daily GS + CSAT classroom sessions', 'Complete prelims + mains syllabus coverage', 'Study material with current affairs integration', 'Regular tests with performance feedback', 'Personal mentorship & study plans'],
@@ -178,6 +183,7 @@
       catLabel: 'Offline',
       title: 'CLAT Foundation Program',
       duration: '2 Year',
+      fee: '₹1,25,000 + GST',
       badges: ['Offline', 'Class 11th & 12th'],
       desc: 'Two-year classroom CLAT foundation for Class 11th & 12th students — aptitude built from the basics.',
       features: ['Legal aptitude from basics to advanced', 'Logical reasoning, English & quant training', 'Current affairs & GK updates', 'Regular mock tests with analysis', 'Personal mentorship & doubt clearing'],
@@ -191,6 +197,7 @@
       catLabel: 'Offline',
       title: 'CLAT Regular Program',
       duration: '1 Year',
+      fee: '₹75,000 + GST',
       badges: ['Offline', 'Law Entrance'],
       desc: 'One-year classroom CLAT program — fast-track syllabus coverage with mock-intensive practice.',
       features: ['Fast-track complete syllabus coverage', 'Legal reasoning & mock-intensive practice', 'English, quant & reasoning drills', 'Current affairs with weekly quizzes', 'Personal mentorship & test feedback'],
@@ -204,6 +211,7 @@
       catLabel: 'Offline',
       title: 'IPM Foundation Program',
       duration: '2 Year',
+      fee: '₹1,25,000 + GST',
       badges: ['Offline', 'Class 11th & 12th'],
       desc: 'Two-year classroom IPM foundation for Class 11th & 12th students — quant and verbal from fundamentals.',
       features: ['Quant aptitude built from fundamentals', 'Verbal ability & reading comprehension', 'Logical reasoning & DI practice', 'Regular mocks with performance tracking', 'Personal mentorship & doubt clearing'],
@@ -217,6 +225,7 @@
       catLabel: 'Offline',
       title: 'IPM Regular Program',
       duration: '1 Year',
+      fee: '₹75,000 + GST',
       badges: ['Offline', 'Management Entrance'],
       desc: 'One-year classroom IPM program — fast-track quant, verbal and reasoning with full-length mocks.',
       features: ['Fast-track quant + verbal coverage', 'Reasoning shortcuts & problem drills', 'Full-length mocks with analysis', 'Current affairs & interview awareness', 'Personal mentorship & test feedback'],
@@ -230,6 +239,7 @@
       catLabel: 'Offline',
       title: 'CUET Regular Program',
       duration: '1 Year',
+      fee: '₹75,000 + GST',
       badges: ['Offline', 'University Entrance'],
       desc: 'One-year classroom CUET program — fast-track domain revision with PYQ practice and mocks.',
       features: ['Fast-track domain + aptitude revision', 'Chapter-wise tests & PYQ practice', 'Full-length CUET mocks with analysis', 'Current affairs & GK support', 'Personal mentorship & test feedback'],
@@ -244,6 +254,7 @@
       catLabel: 'Online',
       title: 'UPSC | HCS Program',
       duration: '1000+ Videos',
+      fee: '₹1,00,000 + GST',
       badges: ['Online', 'GS + CSAT'],
       desc: 'Online UPSC & HCS foundation with 1000+ recorded GS + CSAT lessons, live doubt sessions and mentorship.',
       features: ['1000+ recorded GS + CSAT video lessons', 'Live doubt-clearing sessions', 'Digital study material & current affairs', 'Online tests with performance analytics', 'Personal mentorship & study plans'],
@@ -257,6 +268,7 @@
       catLabel: 'Online',
       title: 'CLAT Foundation Program',
       duration: '2 Year · 1500+ Videos',
+      fee: '₹1,25,000 + GST',
       badges: ['Online', 'Class 11th & 12th'],
       desc: 'Two-year online CLAT foundation with 1500+ recorded lessons, live doubts and online mocks.',
       features: ['1500+ recorded video lessons', 'Legal aptitude from basics to advanced', 'Live doubt-clearing sessions', 'Online mocks with detailed analysis', 'Personal mentorship & tracking'],
@@ -270,6 +282,7 @@
       catLabel: 'Online',
       title: 'CLAT Regular Program',
       duration: '1 Year · 800+ Videos',
+      fee: '₹75,000 + GST',
       badges: ['Online', 'Law Entrance'],
       desc: 'One-year online CLAT program with 800+ focused lessons and mock-based performance analysis.',
       features: ['800+ focused video lessons', 'Fast-track complete syllabus coverage', 'Live doubt-clearing sessions', 'Online mocks with performance analysis', 'Personal mentorship & test feedback'],
@@ -283,6 +296,7 @@
       catLabel: 'Online',
       title: 'IPM Foundation Program',
       duration: '2 Year · 1500+ Videos',
+      fee: '₹1,25,000 + GST',
       badges: ['Online', 'Class 11th & 12th'],
       desc: 'Two-year online IPM foundation with 1500+ lessons across quant, verbal and reasoning.',
       features: ['1500+ recorded video lessons', 'Quant built from fundamentals', 'Verbal & reasoning video drills', 'Online mocks with tracking', 'Personal mentorship & doubt support'],
@@ -296,6 +310,7 @@
       catLabel: 'Online',
       title: 'IPM Regular Program',
       duration: '1 Year · 800+ Videos',
+      fee: '₹75,000 + GST',
       badges: ['Online', 'Management Entrance'],
       desc: 'One-year online IPM program with 800+ focused lessons, shortcuts and online mocks.',
       features: ['800+ focused video lessons', 'Fast-track quant + verbal coverage', 'Reasoning shortcuts & practice sets', 'Online mocks with analysis', 'Personal mentorship & test feedback'],
@@ -309,6 +324,7 @@
       catLabel: 'Online',
       title: 'CUET Regular Program',
       duration: '1 Year · 800+ Videos',
+      fee: '₹75,000 + GST',
       badges: ['Online', 'University Entrance'],
       desc: 'One-year online CUET program with 800+ revision videos, PYQ practice and full-length mocks.',
       features: ['800+ focused revision videos', 'Chapter-wise tests & PYQ practice', 'Full-length online mocks', 'Live doubt-clearing sessions', 'Personal mentorship & test feedback'],
@@ -323,6 +339,7 @@
       catLabel: 'Test Series',
       title: 'Prelims Test Series',
       duration: 'Valid for 1 Year',
+      fee: '₹25,000 + GST',
       badges: ['All India Ranking'],
       desc: 'GS + CSAT prelims test series with All-India ranking, solutions and analytics — valid for one year.',
       features: ['GS + CSAT full-length tests', 'All-India ranking on every test', 'Detailed solutions & explanations', 'Performance analytics & tracking', 'Valid for 1 year from enrolment'],
@@ -336,6 +353,7 @@
       catLabel: 'Test Series',
       title: 'Mains Test Series',
       duration: 'Valid for 1 Year',
+      fee: '₹25,000 + GST',
       badges: ['Evaluated Answers'],
       desc: 'Mains answer-writing test series with expert evaluation, 1:1 feedback and model answers — valid for one year.',
       features: ['GS papers answer-writing tests', 'Expert evaluation of every answer', '1:1 feedback & improvement plan', 'Model answers for each test', 'Valid for 1 year from enrolment'],
@@ -349,6 +367,7 @@
       catLabel: 'Test Series',
       title: 'CLAT Test Series',
       duration: 'Valid for 1 Year',
+      fee: '₹25,000 + GST',
       badges: ['Mock Tests'],
       desc: 'Exam-pattern CLAT mocks with sectional practice and All-India benchmarking — valid for one year.',
       features: ['Exam-pattern full-length mocks', 'Section-wise practice tests', 'Detailed solutions & analysis', 'All-India benchmarking', 'Valid for 1 year from enrolment'],
@@ -362,6 +381,7 @@
       catLabel: 'Test Series',
       title: 'IPM Test Series',
       duration: 'Valid for 1 Year',
+      fee: '₹25,000 + GST',
       badges: ['Mock Tests'],
       desc: 'IPM mocks across quant and verbal with shortcuts, analytics and ranking — valid for one year.',
       features: ['Quant + verbal full-length mocks', 'Section-wise practice tests', 'Detailed solutions & shortcuts', 'Performance analytics & ranking', 'Valid for 1 year from enrolment'],
@@ -375,6 +395,7 @@
       catLabel: 'Test Series',
       title: 'CUET Test Series',
       duration: 'Valid for 1 Year',
+      fee: '₹25,000 + GST',
       badges: ['Mock Tests'],
       desc: 'CUET domain + aptitude mocks with chapter-wise practice and tracking — valid for one year.',
       features: ['Domain + aptitude full-length mocks', 'Chapter-wise practice tests', 'Detailed solutions & analysis', 'Performance tracking & ranking', 'Valid for 1 year from enrolment'],
@@ -394,6 +415,26 @@
   GIAS.findCourse = findCourse;
 
   /* ---------------- Card rendering (courses.html) ---------------- */
+  var COURSE_IMGS = {
+    upscHcs: 'images/courses/UPSC  HCS Program.png',
+    clatF: 'images/courses/CLAT Foundation Program.png',
+    clatR: 'images/courses/CLAT Regular Program.png',
+    ipmF: 'images/courses/IPM Foundation Program.png',
+    ipmR: 'images/courses/IPM Regular Program.png',
+    cuetR: 'images/courses/CUET Regular Program.png',
+    testSeries: 'images/courses/Test-series.png'
+  };
+  function courseImg(c) {
+    var id = c.id || '';
+    if (id === 'off-clat-foundation' || id === 'on-clat-foundation' || id === 'clat-prep') { return COURSE_IMGS.clatF; }
+    if (id === 'off-clat-regular' || id === 'on-clat-regular') { return COURSE_IMGS.clatR; }
+    if (id === 'off-ipm-foundation' || id === 'on-ipm-foundation' || id === 'ipm-prep') { return COURSE_IMGS.ipmF; }
+    if (id === 'off-ipm-regular' || id === 'on-ipm-regular') { return COURSE_IMGS.ipmR; }
+    if (id === 'off-cuet-regular' || id === 'on-cuet-regular' || id === 'cuet-prep') { return COURSE_IMGS.cuetR; }
+    if (id === 'ts-clat' || id === 'ts-ipm' || id === 'ts-cuet' || id === 'ts-prelims' || id === 'ts-mains' || id === 'prelims-test-series') { return COURSE_IMGS.testSeries; }
+    if (id === 'soc-program') { return null; }
+    return COURSE_IMGS.upscHcs;
+  }
   function cardHTML(c, index) {
     var features = c.features.slice(0, 4).map(function (f) {
       return '<li>' + f + '</li>';
@@ -401,12 +442,15 @@
     if (c.features.length > 4) {
       features += '<li>+ ' + (c.features.length - 4) + ' more included</li>';
     }
+    var _img = courseImg(c);
+    var imgTag = _img ? '<img src="' + _img + '" alt="' + c.title + ' at Genius IAS Rohtak" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" onerror="this.remove()">' : '';
     return '' +
       '<article class="course-card" data-cat="' + c.cat + '" data-course="' + c.id + '" ' +
         'style="animation-delay:' + (0.05 + index * 0.06).toFixed(2) + 's" ' +
         'data-search="' + (c.title + ' ' + c.catLabel + ' ' + c.desc + ' ' + c.features.join(' ')).toLowerCase().replace(/"/g, '') + '">' +
-        '<div class="course-card__media">' +
+        '<div class="course-card__media" style="position:relative;">' +
           '<div class="card-art ' + c.art + '">' + icon(c.iconName) + '</div>' +
+          imgTag +
           '<span class="badge badge--glass program-card__cat">' + c.catLabel + '</span>' +
         '</div>' +
         '<div class="course-card__body">' +
@@ -416,6 +460,10 @@
           '</div>' +
           '<p class="course-card__desc">' + c.desc + '</p>' +
           '<ul class="course-card__features">' + features + '</ul>' +
+          '<div style="margin-top:14px;display:flex;align-items:center;justify-content:space-between;gap:10px;">' +
+            '<span style="font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5a6a9c;">Fee</span>' +
+            '<span style="font-weight:800;font-size:1.02rem;color:var(--primary-dark);">' + (c.fee || 'On counselling') + '</span>' +
+          '</div>' +
           '<div class="course-card__foot">' +
             '<a class="btn btn--gold btn--sm" href="contact.html?course=' + encodeURIComponent(c.title) + '#counselling-form">' +
               '<span class="btn__label">Enquire</span></a>' +
@@ -446,6 +494,7 @@
         '</div>' +
         '<div class="modal__body">' +
           '<p id="cmDesc"></p>' +
+          '<p id="cmFee" style="font-weight:800;font-size:1.05rem;color:var(--primary-dark);margin:14px 0 0;"></p>' +
           '<h4>What&rsquo;s included</h4>' +
           '<ul class="check-list" id="cmFeatures"></ul>' +
           '<div class="modal__actions">' +
@@ -469,6 +518,7 @@
     overlay.querySelector('#cmDur').innerHTML = icon('clock') + ' &nbsp;' + c.duration +
       (c.badges.length ? ' &nbsp;·&nbsp; ' + c.badges.join(' · ') : '');
     overlay.querySelector('#cmDesc').textContent = c.desc;
+    overlay.querySelector('#cmFee').textContent = c.fee ? ('Fee: ' + c.fee) : 'Fee shared on counselling';
     overlay.querySelector('#cmFeatures').innerHTML = c.features.map(function (f) {
       return '<li>' + f + '</li>';
     }).join('');
@@ -482,6 +532,22 @@
   /* Categories shown as cards on courses.html (exam detail entries stay
      in the catalogue so View Details modals on program pages keep working) */
   var GRID_CATS = ['offline', 'online', 'testseries', 'commerce'];
+
+  /* ---------------- Page-embedded cards ----------------
+     Any container with data-course-cards="id1,id2,id3" is filled with the
+     matching catalogue cards (with fees). Used by program pages. */
+  function initPageCourseCards() {
+    var holders = document.querySelectorAll('[data-course-cards]');
+    holders.forEach(function (holder) {
+      var ids = (holder.getAttribute('data-course-cards') || '').split(',');
+      var cards = [];
+      ids.forEach(function (id) {
+        var c = findCourse(id.trim());
+        if (c) { cards.push(c); }
+      });
+      holder.innerHTML = cards.map(function (c, i) { return cardHTML(c, i); }).join('');
+    });
+  }
 
   /* ---------------- Filtering + search ---------------- */
   function initCoursesPage() {
@@ -586,6 +652,7 @@
 
   function init() {
     initCoursesPage();
+    initPageCourseCards();
     initGlobalCourseButtons();
   }
 
