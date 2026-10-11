@@ -27,6 +27,7 @@
     social: {
       instagramGIAS: 'https://www.instagram.com/geniusias?igsh=MXFzdDFiNXNrMXFpbw==',
       instagramSOH: 'https://www.instagram.com/school_of_humanities_official?igsh=ZGxxbzVtc3B2MXZv',
+      instagramCLAT: 'https://www.instagram.com/clat.mentors',
       youtube: 'https://youtube.com/@geniusias?si=Cdxn1qv7XsyH4HJe'
     }
   };
@@ -155,8 +156,9 @@
           '<a href="courses.html" class="topbar__page-link">All Courses</a>' +
           '<a href="reviews.html" class="topbar__page-link">Reviews</a>' +
           '<div class="topbar__social">' +
-            '<a href="' + SITE.social.instagramGIAS + '" target="_blank" rel="noopener" aria-label="Genius IAS on Instagram">' + icon('instagram') + '</a>' +
-            '<a href="' + SITE.social.youtube + '" target="_blank" rel="noopener" aria-label="Genius IAS on YouTube">' + icon('youtube') + '</a>' +
+            '<a href="' + SITE.social.instagramGIAS + '" target="_blank" rel="noopener" title="Genius IAS on Instagram — @geniusias" aria-label="Genius IAS on Instagram">' + icon('instagram') + '</a>' +
+            '<a href="' + SITE.social.instagramCLAT + '" target="_blank" rel="noopener" title="CLAT Mentors on Instagram — @clat.mentors" aria-label="CLAT Mentors on Instagram">' + icon('instagram') + '</a>' +
+            '<a href="' + SITE.social.youtube + '" target="_blank" rel="noopener" title="Genius IAS on YouTube — @geniusias" aria-label="Genius IAS on YouTube">' + icon('youtube') + '</a>' +
           '</div>' +
         '</div>' +
       '</div>';
@@ -319,8 +321,9 @@
                 '<img src="images/logo4.jpeg" alt="Genius IAS School — a venture of Genius IAS" loading="lazy">' +
               '</div>' +
               '<div class="footer__social">' +
-                '<a href="' + SITE.social.instagramGIAS + '" target="_blank" rel="noopener" aria-label="Genius IAS on Instagram (opens in new tab)">' + icon('instagram') + '</a>' +
-                '<a href="' + SITE.social.youtube + '" target="_blank" rel="noopener" aria-label="Genius IAS on YouTube (opens in new tab)">' + icon('youtube') + '</a>' +
+                '<a href="' + SITE.social.instagramGIAS + '" target="_blank" rel="noopener" title="Genius IAS on Instagram — @geniusias" aria-label="Genius IAS on Instagram (opens in new tab)">' + icon('instagram') + '</a>' +
+                '<a href="' + SITE.social.instagramCLAT + '" target="_blank" rel="noopener" title="CLAT Mentors on Instagram — @clat.mentors" aria-label="CLAT Mentors on Instagram (opens in new tab)">' + icon('instagram') + '</a>' +
+                '<a href="' + SITE.social.youtube + '" target="_blank" rel="noopener" title="Genius IAS on YouTube — @geniusias" aria-label="Genius IAS on YouTube (opens in new tab)">' + icon('youtube') + '</a>' +
               '</div>' +
             '</div>' +
             /* programs */
